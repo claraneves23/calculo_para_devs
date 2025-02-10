@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: left;
+    border-bottom: 5px solid #FF2978;
+    background:#18074a;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.logo{
+    flex:20%;
+    text-align:left;
+}
+.logo h1{
+    
+    font-size: 34px;
+    font-family: "Doto", serif;
+}
+h1 a{
+    text-decoration: none;
+    color:#FF2978;
+}
+h1 a:hover{
+    color:#5e48a1 ;
+}
+body{
+    margin: 0;
+    font-family: "Montserrat", serif;
+    padding: 0;
+    
+}
+.titulo{
+    text-align: center;
+}
+
+.content h1{
+    font-weight: 800;
+    font-size: 35px;
+    padding: 0;
+    margin-top:0;
+    color:#18074a;
+}
+.content p{
+    margin: 15px 10%;
+    color:grey;
+    text-align: left;
+}
+
+.grafico{
+    text-align: center;
+}
+
+footer{
+    margin-top:100px;
+    height: 400px;
+    background-image: linear-gradient(180deg,#180f4a,#090422,black);
+    text-align:center;
+    border-top: 5px solid #FF2978;
+}
+.logo-rodape{
+    padding: 100px;
+}
+
+.calculo{
+    font-family: "Doto", serif;
+    color:#FF2978;
+    font-size: 34px;
+}
