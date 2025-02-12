@@ -16,16 +16,16 @@ header{
     flex:20%;
     text-align:left;
 }
-.logo h1{
+.logo a{
     
     font-size: 34px;
     font-family: "Doto", serif;
 }
-h1 a{
+header a{
     text-decoration: none;
     color:#FF2978;
 }
-h1 a:hover{
+header a:hover{
     color:#5e48a1 ;
 }
 body{
@@ -51,12 +51,23 @@ content{
     margin-top:0;
     color:#18074a;
 }
+.content h2, h3{
+    margin: 15px 10%;
+    margin-top: 25px;
+    color:#354b54;
+    text-align: left;
+}
 .content p{
     margin: 15px 10%;
     color:grey;
     text-align: left;
 }
-
+.content li{
+    margin: 15px 10%;
+    color:grey;
+    font-weight: 700;
+    text-align: left;
+}
 iframe, img {
     display: block; 
     margin: 25px auto; 
