@@ -51,9 +51,9 @@ content{
     margin-top:0;
     color:#18074a;
 }
-.content h2, h3{
+.content h2, h3, h4{
     margin: 15px 10%;
-    margin-top: 25px;
+    margin-top: 15px;
     color:#354b54;
     text-align: left;
 }
