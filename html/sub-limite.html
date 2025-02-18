@@ -176,7 +176,53 @@
                                 <td>O limite do quociente é igual ao quociente dos limites.</td>
                             </tr>
                     </table>
-                                    
+                    <p>Exemplos:</p>
+                        <p>Suponha que: \(\displaystyle \lim _{x\rightarrow 2} \ f( x) =\ 4\) e \( \lim_{x\rightarrow{}2} g(x)= -3\)</p>
+                            <p>a) \(\displaystyle \lim _{x\rightarrow 2} \ 7f( x) =\ 7.4=28\)</p>
+                            <p>b) \(\displaystyle \lim _{x\rightarrow 2} \ -2g( x) =-2( -3) =6\)</p>
+                            <p>c) \(\displaystyle \lim _{x\rightarrow 2} \ 5f( x) +\ 4g( x) =\ 5.( 4) \ +\ 4.( -3) =20-12=8\)</p>
+                <h3>Limites Laterais</h2>  
+                    <h4>Definição</h4>
+                            <li>Limite pela direita \(\lim _{x\rightarrow p^{+}} f( x) =L_{1}\):</li>
+                            <p>Quando x se aproxima de p por valores maiores que p, o limite de f(x) é \(L_{1}\)</p>
+                            <li>Limite pela esquerda \(\lim _{x\rightarrow p^{-}} f( x) =L_{2}\):</li> 
+                            <p>Quando x se aproxima de p por valores menores que p, o limite de f(x) é \(L_{2}\)</p>  
+                    <h4>Condições para Existência do Limite</h4>  
+                        <li>Se \(\lim _{x\rightarrow p^{+}} f( x) =\ \lim _{x\rightarrow p^{-}} f( x) =\ L\) , então \(\displaystyle \lim _{x\rightarrow p} f( x) =L\)</li>
+                        <li>Se \(\lim _{x\rightarrow p^{+}} f( x) \neq \ \lim _{x\rightarrow p^{-}} f( x) =\ L\), então \(\displaystyle \lim _{x\rightarrow p} f( x)\) não existe</li>
+                        <li>Se \(\displaystyle \lim _{x\rightarrow p} f( x) =L\), então os limites laterais também são iguais a L. </li> 
+                        <p>Observação:</p>
+                        <p>Se f(x) não estiver definida em um dos lados de p, o limite de f(x) nesse ponto será igual ao limite existente.</p> 
+                        <img src="../img/limites_laterais.png">     
+                        <p>Exemplos:</p>
+                        <p>\(\displaystyle f( x) \ =\ \begin{Bmatrix}
+                            x\ se\ x\geq 1 & \\
+                            -x\ se\ x< \ 1 & 
+                            \end{Bmatrix}\), determine os limites \(\displaystyle \lim _{x\rightarrow 1^{+}} f( x)\) e \(\displaystyle \lim _{x\rightarrow 1^{-}} f( x)\)</p>    
+                        <p>Precisamos determinar os limites laterais e o limite geral em x=1</p>  
+                        <p>1. Cálculo dos limites laterais</p>
+                        <li>Limite pela direita \(\displaystyle \lim _{x\rightarrow 1^{+}} f( x)\) </li>
+                        <p>Quando x tende a 1 pela direita (x > 1), a função segue a regra f(x) = x. Portanto:</p>
+                        <p>\[
+                            \displaystyle \lim _{x\rightarrow 1^{+}} f( x) =\ \lim _{x\rightarrow 1^{+}} x=1
+                            \]
+                        </p>
+                        <li>Limite pela esquerda \(\displaystyle \lim _{x\rightarrow 1^{-}} f( x)\) </li>
+                        <p>Quando x tende a 1 pela direita (x < 1), a função segue a regra f(x)=-x</p>
+                        <p>\[
+                            \displaystyle \lim _{x\rightarrow 1^{-}} f( x) =\ \lim _{x\rightarrow 1^{-}} -(x)=-1
+                            \]
+                        </p>
+                        <p>2. Verificação do limite geral \(\displaystyle \lim _{x\rightarrow 1} f( x)\)</p>
+                        <p>Para que o limite de f(x) em x = 1 exista, os limites laterais devem ser iguais.</p>
+                        <p>Como \(\displaystyle \lim _{x\rightarrow 1^{+}} f( x) =\ 1\) e \(\displaystyle \lim _{x\rightarrow 1^{-}} f( x) =\ -1\), temos que:</p>
+                        <p>
+                            \[
+                            \lim _{x\rightarrow 1^{+}} f( x) \neq \ \lim _{x\rightarrow 1^{-}} f( x)
+                            \]
+                        </p>
+                        <p>Portanto, o limite \(\displaystyle \lim _{x\rightarrow 1} f( x)\)  não existe. </p>
+                        
     </div>
     <footer>
         <div class="logo-rodape">
