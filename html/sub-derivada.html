@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Derivada</title>
     <link rel="stylesheet" href="../css/sub-style.css">
+
+    <script type="text/javascript" async
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+    </script>
+    <script type="text/javascript" async
+        id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
     <body>
         <header class="logo">
             <h1><a href="index.html">Cálculo para Devs</a></h1>
@@ -14,18 +22,164 @@
             <div class="titulo">
                 <h1>Derivada</h1>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae laudantium non, consequatur voluptatibus sequi. Reprehenderit aperiam aliquam cupiditate consequatur odio dignissimos expedita doloremque fugiat repellendus, voluptas deleniti modi iste.
-            A commodi cumque sequi similique sit aliquam earum optio magnam dolore eaque error, est enim quisquam nihil, reprehenderit alias iste sapiente obcaecati expedita! Rem suscipit id voluptatum. Provident, veritatis illo!
-            Praesentium, animi velit accusamus impedit error nihil ad tempora dolorem corrupti, facilis delectus voluptas at aut maxime quas! Id aspernatur debitis iusto laudantium corporis ipsam incidunt quis temporibus possimus voluptate.
-            Recusandae adipisci tempore, autem similique ipsa voluptatem! Accusamus culpa quia nam ex rem suscipit minima quod voluptas repellendus perferendis veritatis, qui hic officia necessitatibus enim ea vitae, quisquam minus tenetur?
-            Labore vitae iure voluptatibus dolore nesciunt animi qui accusamus magni, sed optio aperiam voluptas! Modi praesentium omnis soluta minus expedita nemo quaerat iste nobis tempore. Temporibus in officiis ad qui.
-            Quidem quasi voluptas voluptate eaque temporibus rerum vero, deserunt assumenda, fugit modi ex qui aperiam? Asperiores, earum porro odit tempora deleniti officiis tempore impedit aliquid rem, nesciunt blanditiis accusamus a?
-            Quos, quam vitae! Cumque dignissimos ab quod odit nemo, veritatis impedit dolore nesciunt nam expedita vero, doloribus eligendi sint voluptatum. Dolore laborum debitis assumenda. Nesciunt excepturi consequatur quod vel tempore.
-            Ex obcaecati blanditiis nulla! Reiciendis rerum cumque, optio id atque officia autem libero sapiente debitis in magni reprehenderit, doloribus pariatur modi a. Ea sequi fugit totam dicta est repudiandae deleniti!
-            Nam reprehenderit aliquam, consequatur tempora expedita iste, molestias est unde maiores consequuntur ratione cupiditate delectus dolor ab aperiam cum harum vitae rerum quis sed. Dolorum aliquid impedit sit repellat sapiente.
-            Et consequatur quaerat provident! Doloremque veniam corrupti iure, est autem velit laborum eum libero sint vero voluptatum quam cum officiis maiores natus nostrum dicta, aliquam et error sunt? Iure, nesciunt?
-            Laboriosam cupiditate facilis ab explicabo aliquam inventore nostrum reprehenderit numquam voluptatum perferendis eius iste suscipit eum, aspernatur saepe labore voluptates? Placeat ratione at odio asperiores molestias similique commodi in deleniti?
-            Error quod sit ratione libero, excepturi, eius, dolorem accusantium aliquid cum quidem possimus quisquam rerum consequuntur sint! Obcaecati facilis fuga aspernatur exercitationem. Nisi, saepe quibusdam asperiores itaque corrupti quaerat autem.</p>
+            <h2>Definição</h2>
+            <p>A derivada de uma função y = f(x) mede como y muda quando x varia. Ela pode ser representada de três formas:</p>
+                <li>Notação de Lagrange: y′ ou f ′(x).</li>
+                <li>Notação de Leibniz: \(\frac{dy}{dx}\), que significa "a derivada de y em relação a x".</li>
+                <li>Definição Matemática: A derivada é calculada pela fórmula:</li>
+                <p>\[
+                    f'( x) =\lim _{\Delta x\rightarrow 0}\frac{f( x+\Delta x) -f( x)}{\Delta x}
+                    \]
+                </p>
+                <p>Onde \(f( x+\Delta x)-f( x)\) representa a variação de y quando o x muda por \(\Delta x\)</p>
+                <p>Quando uma Função é Derivável?</p>
+                    <li>Uma função y = f(x) é derivável em um conjunto se a derivada f′(x) existir para todos os valores de x nesse conjunto.</li>
+                    <li>Dizer que y = f(x) é derivável em x significa que f′(x) existe para todos os x no domínio da função.</li>
+                <h3>Derivadas Elementares -  Função Constante</h3>
+                    <p>A função constante f(x) = k tem derivada zero para todo x real. Isso acontece porque:</p>
+                        <li>A variação \(\Delta y=f( x+\Delta x-f(x)= k - k = 0)\)</li>
+                        <li>A derivada é calculada como:</li>
+                    <p>
+                        \[
+                        \displaystyle f'( x) =\lim _{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}=\lim _{\Delta x\rightarrow 0}\frac{0}{\Delta x} =0
+                        \]
+                    </p>
+                    <p>Ou seja, A derivada de uma constante k é sempre 0. Na tabela de derivadas, isso é representado por (k)'=0.</p>
+                    <p>Exemplo:</p>
+                    <p>\(f(x)= 3\), logo, \(f(x) =0\)</p>
+                <h3>Derivadas Elementares -  Função Potência</h3>
+                    <p>A derivada da função potência \(f(x)=x^n\) (onde n é um número racional diferente de zero) segue uma regra simples</p>
+                        <li>Caso Geral:</li>
+                            <p>&emsp;Se \(f(x)=x^n\), então a derivada é \(f'( x) =n.x^{n-1}\). Isso vale para qualquer n racional, desde que a função esteja definida.</p>
+                            <p>&emsp;Isso vale para qualquer n racional, desde que a função esteja definida.</p>
+                        <li>Caso Específico:</li>
+                            <p><strong>Para n > 0 (números naturais):</strong></p>
+                                <p>&emsp;A função \(f(x)=x^n\) é derivável, e sua derivada é:\(f'( x) =n.x^{n-1}\).</p>
+                            <p><strong>Para \(f(x)=\frac{1}{x^{n}}\) (ou \(x^{-n}\)):</strong></p>
+                                <p>&emsp;A função \(f(x)=\frac{1}{x^{n}}\) para \(\displaystyle x\neq 0\), e sua derivada é: </p>
+                                    <p>
+                                        \[
+                                            f'( x) =-n.x^{n-1} =\frac{-n}{x^{n+1}}
+                                        \]
+                                    </p>
+                                    <p>Exemplos:</p>
+                                    <li>\(f(x)=x^2\)</li>
+                                        <p>
+                                            \[
+                                            f'( x) =2.x^{2-1}
+                                            \]
+                                        </p>
+                                        <p>
+                                            \[
+                                                f'( x)=2x
+                                            \]
+                                        </p>
+                                    <li>\(f(x)=\frac{1}{x}\)</li>
+                                    <p>
+                                        \[
+                                        f'( x) =\frac{1}{x^{1+1}}
+                                        \]
+                                    </p>
+                                    <p>
+                                        \[
+                                        f'( x) =\frac{1}{x^2}
+                                        \]
+                                    </p>
+                <h3>Derivadas Elementares -  Função Exponencial e Logarítmica Natural</h3>
+                    <li>Derivada da Função Exponencial (de Base e).</li>
+                        <p>&emsp;Para todo x real a função exponencial e é derivável e \((e^x)'=e^x\)</p>
+                    <li>Derivada da Função Logaritmica Natural</li>
+                        <p>&emsp;Para todo real x > 0, a função logaritmica natural, \(\displaystyle \ln \ x\), é derivável e \(\displaystyle (\ln \ x) '=\frac{1}{x}\), x > 0.</p>
+                <h3>Derivadas Elementares -  Funções Trigonométricas </h3>
+                    <p>As funções trigonométricas são deriváveis e valem as seguintes fórmulas de derivação:</p>
+                    <img src="../img/de_funcoes_trigonometricas.png">
+            <h2>Regras de Derivação</h2>
+                <table>
+                    <tr>
+                        <td>Derivada da Multiplicação por uma Constante</td>
+                        <td>\(( k.f( x)) '=\ k.f'( x)\)</td>
+                    </tr>
+                    <tr>
+                        <td>Derivado da Soma de Funções</td>
+                        <td>\(\displaystyle ( f( x) +g( x)) '\ =\ f'( x) +g'( x)\)</td>
+                    </tr>
+                    <tr>
+                        <td>Derivado do Produto de uma função</td>
+                        <td>Derivada da primeira vezes a segunda, mais a primeira vezes a derivada da segunda.
+                                \(\displaystyle ( f( x).g( x)) '\ =\ f'( x).g( x)+f( x).g '( x)\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Derivada do Inverso de uma função</td>
+                        <td>A derivada de \(\frac{1}{g( x)}\) é:
+                                \[
+                                    \displaystyle \left(\frac{1}{g( x)}\right) '=\ -\ \frac{g'( x)}{( g( x))^{2}}
+                                \]
+                                Isso significa que a derivada do inverso de uma função depende da derivada da função original.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Derivada do Quociente de uma função</td>
+                        <td>
+                                \[
+                                \displaystyle \left(\frac{f( x)}{g( x)}\right) '=\frac{f'( x) .g( x) -f( x) .g'( x)}{( g( x))^{2}}
+                                \]
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>Regra de Cadeia (Derivada de Função Composta)</td>
+                        <td>Se \(y= f(g(x))\), onde \(u =g(x)\), a derivada de y em relação a x é:
+                                \[
+                                \displaystyle \frac{dy}{dx} =\frac{dy}{du} .\frac{du}{dx}
+                                \]
+                                Ou seja, derivada da função externa vezes a derivada da função interna.
+                        </td>
+                    </tr>
+                </table>
+                <p>Exemplos:</p>
+                <li>Derivada da Multiplicação por uma Constante</li>
+                <p>&emsp;\(f(x) = 5x^2\)</p>
+                <p>&emsp;\(f'(x) = 5.(2x^{2-1}) = 10x\)</p>
+                <li>Derivada da Soma de Funções</li>
+                <p>&emsp;\(f(x) = 3x^2\) e \(g(x) = 4x\)</p>
+                <p>&emsp;\(3x^2+4x)'=3.(2x^{2-1}+4.(1x^0) = 6x+4\)</p>
+                <li>Derivada do Produto de Funções</li>
+                <p>&emsp;\(f(x) = x^2\) e \(g(x) = x+2\)</p>
+                <p>&emsp;\(\displaystyle ( f( x).g( x)) '\ =\ f'( x).g( x)+f( x).g '( x)\)</p>
+                <p>&emsp;\(((x^2).(x+2))'=2x.(x+2)+x^2.(1x^0+0)= 2x^2+4x+x^2 = 3x^2+4x\)</p>
+                <li>Derivada do Inverso de uma Função</li>
+                <p>&emsp;\(\displaystyle \left(\frac{1}{g( x)}\right) '=\ -\ \frac{g'( x)}{( g( x))^{2}}\)</p>
+                <p>&emsp;\(\displaystyle \left(\frac{1}{x^2+1}\right) '=\ - \frac{(x^2+1)'}{(x^2+1)^{2}}= -\ \frac{2x+0}{(x^2+1)^{2}}=\ -\frac{2x}{(x^2+1)^{2}}\)</p>
+                <li>Derivada do Quociente de Funções.</li>
+                <p>&emsp;\(\displaystyle \left(\frac{f( x)}{g( x)}\right) '=\frac{f'( x) .g( x) -f( x) .g'( x)}{( g( x))^{2}}\)</p>
+                <p>&emsp;\(f(x) = x^3\) e \(g(x) = x + 1\)</p>
+                <p>&emsp;\(\displaystyle \left(\frac{x^3}{x+1}\right) '=\frac{3x^2 .(x+1) -x^3 .(1x^0+0)}{(x+1)^{2}}=\frac{3x^3+3x^2-x^3 }{(x+1)^{2}}=\frac{2x^3+3x^2}{(x+1)^{2}}\)</p>
+                <li>Regra da Cadeia (Derivada de Função Composta)</li>
+                <p><strong>Função Composta:</strong></p>
+                <p>\[
+                        y = (2x + 3) ^ 4
+                    \]
+                </p>
+                <p><strong>1. Defina \(u = (2x + 3)\), então \(y = u ^ 4\)</strong></p>
+                <p><strong>2. Calcule a derivada de \(y = (u ^ 4)\)</strong></p>
+                <p>\[
+                     (y') = 4u ^ 3
+                    \]
+                </p>
+                <p><strong>3. Calcule a derivada de \(u= (2x + 3)\):</strong></p>
+                <p>\[
+                         (2x + 3)' = 2x ^ 0 + 0 = 2
+                    \]
+                </p>
+                <p><strong>4. Multiplique as derivadas: \(4u ^ 3.2 = 8u ^ 3\)</strong></p>
+                <p><strong>5. Substitua u de volta:</strong></p>
+                <p>\[
+                        8. (2x + 3) ^ 3
+                    \]
+                </p>
+
+
+            
     
        
         </div>
