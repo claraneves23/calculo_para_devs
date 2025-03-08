@@ -24,7 +24,7 @@
             </div>
             <h2>Definição</h2>
             <p>A derivada de uma função y = f(x) mede como y muda quando x varia. Ela pode ser representada de três formas:</p>
-                <li>Notação de Lagrange: y′ ou f ′(x).</li>
+                <li>Notação de Lagrange: y′ ou f′(x).</li>
                 <li>Notação de Leibniz: \(\frac{dy}{dx}\), que significa "a derivada de y em relação a x".</li>
                 <li>Definição Matemática: A derivada é calculada pela fórmula:</li>
                 <p>\[
@@ -177,11 +177,101 @@
                         8. (2x + 3) ^ 3
                     \]
                 </p>
-
-
-            
-    
-       
+            <h3>Interpretação Geométrica da Derivada: Reta Tangente ao Gráfico de uma Função</h3>
+            <h4>Interpretação da Derivada no ponto \(x_{0}\)</h4>
+            <p>Para traçar a reta tangente \(T\) ao gráfico de \(y = f(x)\) no ponto \(A = (x_{0},f(x_{0}))\), precisamos de mais um ponto. Damos um acréscimo \(\Delta x\) a \(x_{0}\) e consideramos a reta secante \( S_{\Delta x}\) que passa pelos pontos \(A = (x_{0},f(x_{0}))\) e \(B = (x_{0} + \Delta x,f(x_{0} + \Delta x))\). O coeficiente angular da reta secante é:</p>
+            <p>\[
+                mS_{\Delta x} =\frac{f( x_{0} +\ \Delta x) -f( x_{0})}{\Delta x}
+                \]
+            </p>
+            <img src="../img/grafico_ponto_derivada.png">
+            <p>Quando \( \Delta x \rightarrow 0 \), as retas secantes \( S_{\Delta x}\) se aproximam da reta tangente \(T\), e seus coeficientes angulares \( mS_{\Delta x}\) tendem ao coeficiente angular \(mT\) da reta tangente \(T\). Assim:</p>
+            <p>\[
+                m_{T} =\ \lim _{\Delta x\rightarrow 0} m_{S\Delta x} =\lim _{\Delta x\rightarrow 0}\frac{f( x_{0} +\ \Delta x) \ -\ f( x_{0})}{\Delta x} =\ f'( x_{0})
+                \]
+            </p>
+            <p>Portanto, a derivada \(f'( x_{0}\)) é o coeficiente angular da reta tangente ao gráfico de \(y = f(x)\) no ponto \(x_{0}\). A equação da reta tangente que passa por \((x_{0},f(x_{0}))\) com coeficiente angular \(m_{T} = f'(x_{0})\) é:</p>
+            <p>\[
+                y-f( x_{0}) =f'( x_{0})( x-x_{0})
+                \]
+            </p>
+            <img src="../img/grafico_derivada.png" alt="Interpretação Geométrica da Derivada: Reta Tangente ao Gráfico de uma Função">
+            <p>Exemplo:</p>
+            <p>Encontrar a equação reduzida da reta \(T\), tangente ao gráfico da função \(f( x) =\frac{x^{2}}{2x-1}\), no ponto de tangência \(A = (2,f(2))\):</p>
+            <p><strong>1. Calcule \(f(2)\):</strong></p>
+            <p>\[
+                f( 2) =\frac{( 2)^{2}}{2.( 2) -1} =\frac{4}{4-1} =\frac{4}{3}
+                \]
+            </p>
+            <p>Portanto, o ponto de tangência é \(A=\ \left( 2,\frac{4}{3}\right)\).</p>
+            <p><strong>2. Calcule a derivada \(f'(x)\):</strong></p>
+            <p>
+                \[
+                f( x) =\frac{x^{2}}{2x-1}
+                \]
+            </p>
+            <p>Usando a regra do quociente:</p>
+            <p>
+                \[
+                f'( x) =\frac{( 2x)( 2x-1) -x^{2} .2}{( 2x-1)^{2}} =\frac{4x^{2} -2x-2x^{2}}{( 2x-1)^{2}} =\frac{2x^{2} -2x}{( 2x-1)^{2}}
+                \]
+            </p>
+            <p><strong>3. Calcule \(f'(2)\):</strong></p>
+            <p>
+                \[
+                f'( 2) =\frac{2.( 2)^{2} -2.( 2)}{( 2.2-1)^{2}} =\frac{2.( 4) -4}{( 4-1)^{2}} =\frac{8-4}{( 3)^{2}} =\frac{4}{9}
+                \]
+            </p>
+            <p><strong>4. Escreva a equação da reta tangente:</strong></p>
+            <p>
+                \[
+                y-\frac{4}{3} =\frac{4}{9}( x-2)
+                \]
+            </p>
+            <p>Simplificando:</p>
+            <p>
+                \[
+                y=\frac{4}{9} x-\frac{8}{9} +\frac{4}{3} =\frac{4}{9} x+\frac{4}{9}
+                \]
+            </p>
+            <p>A equação reduzida da reta tangente \(T\) é:</p>
+            <p>
+                \[
+                y = \frac{4}{9} x+\frac{4}{9}
+                \]
+            </p>
+            <h3>Função Diferencial</h3>
+            <p>A derivada \(f'(x_{0})\) representa o coeficiente angular da reta tangente \(T\) ao gráfico de \(y = f(x)\) no ponto \((x_{0},f(x_{0}))\). A notação \(\frac{dy}{dx}=f'(x_{0})\) indica que a derivada é a razão entre a variação infinitesimal de \(y(dy)\) e a variação infinitesimal de \(x(dx)\). Assim, podemos escrever:</p>
+            <p>
+                \[
+                dy = f'(x_{0}).dx
+                \]
+            </p>
+            <p>Onde:</p>
+            <li>\(dy\) é a diferencial de \(y\), que represemta o acréscimo na ordenada da reta tangente.</li>
+            <li>\(\Delta y = f(x_{0} + dx)-f(x_{0})\) é o acréscimo real da função quando \(x\) varia de \(x_{0}\) para \(x_{0}+dx\)</li>
+            <p>A diferencial \(dy\) é uma aproximação linear para \(\Delta y\), e o erro \(E = \Delta y - dy \) diminui à medida que \(dx\) se torna menor. Em geral, a diferencial de uma função \(y = f(x)\) é dada por:</p>
+            <p>
+                \[
+                dy = f'(x).dx
+                \]
+            </p>
+            <p>Exemplo:</p>
+            <p>As arestas de um cubo medem 2 metros e são aumentadas para 2,001 mestros. Calcule a variação aproximada do volume do cubo usando a diferencial da função volume.</p>
+            <p><strong>1. A função volume do cubo é \(V(x) = x^3\), onde é \(x\) o comprimento da aresta.</strong></p>
+            <p><strong>2. Calcule a derivada \(V'(x)\):</strong></p>
+            <p>
+                \[
+                V'(x) = 3x^2
+                \]
+            </p>
+            <p>Para \(x = 2\) metros e \(dx = 0,001\) metros (aumento nas arestas), calcule a diferencial \(dV\)</p>
+            <p>
+                \[
+                dV= V'(2).dx = 3.(2)^2.0,001 = 12.0,001 = 0,012m^3
+                \]
+            </p>
+            <p><strong>4. Portanto, a variação aproximada do volume é \(0,012m^3\)</strong></p>
         </div>
         <footer>
             <div class="logo-rodape">
