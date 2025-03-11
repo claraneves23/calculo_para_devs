@@ -65,7 +65,6 @@ content{
 .content li{
     margin: 15px 10%;
     color:grey;
-    font-weight: 700;
     text-align: left;
 }
 iframe, img {
@@ -74,11 +73,10 @@ iframe, img {
     max-width: 100%; 
 }
 table{
-   
-    width: calc(100% - 90px); 
+    width: 70%; 
+    margin-left: 15%;
+    margin-right: 15%;
     border-collapse: collapse;
-    margin-left: 40px;  
-    margin-right: 20px; 
     background-color: #354b54;
 }
 .table-title{

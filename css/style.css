@@ -52,6 +52,15 @@ body{
     color:grey;
     text-align: left;
 }
+.headline a{
+    color: #18074a;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.headline a:hover{
+    color: #7856e0;
+    transition: 0.5s;
+}
 .img-headline{
 
     flex: 30%; /* Atribui 30% da largura do contêiner */
@@ -70,6 +79,7 @@ li{
     background: #18074a;
     border-radius: 5px;
     text-align: center;
+    transition: 0.5s;
 }
 
 li a{
@@ -82,6 +92,9 @@ li a{
 }
 li:hover{
     background: #5e48a1;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px black;
+    transition: 0.5s;
 }
 footer{
     margin-top:100px;
@@ -98,4 +111,9 @@ footer{
     font-family: "Doto", serif;
     color:#FF2978;
     font-size: 34px;
+    padding-bottom: 5%;
+}
+
+.social a{
+    text-decoration: none;
 }
