@@ -25,6 +25,41 @@
         </div>
         <h2>Definição</h2>
         <p>A integração é o processo inverso de derivação. Isso significa que, ao integrar uma função, estamos encontrando outra função cuja derivada seja a função original dada. A integral indefinida de uma função \(f(x)\) é represntada por \(\int f( x) dx\) e corresponde a uma família de funções primitivas de \(f(x)\), sempre somadas a uma constante arbitrária \(C\).</p>
+        <h2>Primitiva de uma Função - Integral Indefinida</h2>
+        <p>A primitiva \(F(x)\) de uma função \(f(x)\). Ou seja, se, então \(F(x)\) é uma primitiva de \(f(x)\).</p>
+        <p>Exemplo:</p>
+        <p>Encontre uma função cuja derivada seja \(2x\):</p>
+        <p>\(x^2\) resolve o problema, pois a sua derivada é \(2x)\. Observe que, se \(c\) for constante, a derivada de \((x^2 + c)'\) = \((x^2)'\) + \((c)'\) = \(2x\) + 0 = \(2x\).</p>
+        <h2>Integral Indefinida</h2>
+        <p>A integral indefinida de uma função é a família de primitivas dessa função, representada por:</p>
+        <p>
+            \[\int f( x) dx = F(x) + C\]
+        </p>
+        <p>Exemplo:</p>
+        <p>Encontre a integral de \(4x^3\).</p>
+        <p>\(x^4\) resolve o problema, pois a sua derivada é \(4x^3\). Observe que, se \(c\) for constante, a derivada de \(x^4 + c\), será também \(4x^3\), pois a derivada de uma constante é zero: \(\left( x^{4} +c\right) '=\left( x^{4}\right) '\ +\ ( c) '\ =\ \ 4x^{3} \ +\ 0\ =\ 4x^{3}\).</p>
+        <h3>Integral da Função Potência</h3>
+        <p>Para qualquer expoente real \(r\ \neq \ 1\), a integral de uma função potência segue a fórmula</p>
+        <li>Se \(r = -1\), a integral é dada por:</li>
+        <p>
+            \[
+            \int x^{r} dx\ =\ \frac{x^{r+1}}{r+1} \ +\ C
+            \]
+        </p>
+        <li>Se \(r\ \neq \ -1\), a integral é dada por:</li>
+        <p>
+            \[
+            \int \frac{1}{x} \ dx=\ \ln| x|\ +\ C
+            \]
+        </p>
+        <p>Exemplos:</p>
+        <li>\(\int x^{2} dx\ =\ \frac{x^{3}}{3} \ +\ C\)</li>
+        <li>\(\int \sqrt{xdx} \ =\ \int x^{\frac{1}{2}} dx\ =\ \frac{x^{\frac{1}{2} \ +\ 1}}{\frac{1}{2} \ +\ 1} \ +\ C=\ \frac{x^{\frac{3}{2} \ }}{\frac{3}{2}} \ +\ C\ =\ \frac{2}{3} x^{\frac{3}{2}} \ +\ C\)</li>
+        <h3>Combinação Linear de Funções Integráveis</h3>
+        <p>A integral da soma de suas funções é a soma das integrais individuais, e a integral do produto de uma constante por uma função é o produto da constante pela integal dessa função.</p>
+        <p>Exemplo:</p>
+        <p>Calcule \(\int(3x^2 + 5\sqrt{x})dx\):</p>
+        <p>\(\int(3x^2dx) + \int 5\sqrt{xdx} = 3.\frac{x^{3}}{3} + 5.\frac{2}{3}x^{\frac{3}{2}}+C = x^3 + \frac{10}{3}x^{\frac{3}{2}}+C\)</p>
     </div>
     <footer>
         <div class="logo-rodape">
