@@ -90,8 +90,26 @@ th, td {
     font-weight: normal;
 }
 
+#backToTop{
+    border-radius: 100%;
+    background-color: #18074a;
+    border: 3px solid #FF2978;
+    position: absolute;
+    right: 3vw;
+    cursor: pointer;
+}
+
+.ri-arrow-up-s-line {
+    transition: 0.5s;
+}
+
+.ri-arrow-up-s-line.arrow_up {
+    transform: translateY(-10px);
+}
+
+
 footer{
-    margin-top:10vh;
+    margin-top:15vh;
     height: max-content;
     background-image: linear-gradient(180deg,#180f4a,#090422,black);
     text-align:center;
