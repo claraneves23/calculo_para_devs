@@ -5,12 +5,15 @@
 header{
     display: flex;
     flex-flow: row wrap;
-    justify-content: left;
-    align-items: left;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 5px solid #FF2978;
     background:#18074a;
     padding: 2%;
     margin-bottom: 5vh;
+}
+header i{
+    cursor: pointer;
 }
 .logo{
     flex:20%;
