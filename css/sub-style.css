@@ -92,16 +92,19 @@ th, td {
 }
 
 #backToTop{
+    display: flex;
     padding: 0.3%;
     border-radius: 100%;
     background-color: #18074a;
     border: 3px solid #FF2978;
-    position: absolute;
+    position: fixed;
+    bottom: 5vh;
     right: 3vw;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     transition: .5s ease-in-out;
+    visibility: hidden;
 }
 
 .ri-arrow-up-s-line{
@@ -115,7 +118,7 @@ th, td {
 
 
 footer{
-    margin-top:10vh;
+    margin-top:15vh;
     height: max-content;
     background-image: linear-gradient(180deg,#180f4a,#090422,black);
     text-align:center;
