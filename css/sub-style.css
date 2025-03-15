@@ -24,12 +24,69 @@ header i{
     font-size: 34px;
     font-family: "Doto", serif;
 }
+.Sum-list a{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Montserrat", serif;
+}
+.container {
+    position: relative;
+    display: inline-block;
+}
+.Sum-list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #18074a;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow:0px 5px 15px black;
+    opacity: 0;
+    transform: scale(0);
+    transform: translateY(-4vh);
+    transition: 0.3s ease;
+    pointer-events: none;
+    overflow: hidden;
+}
+.Sum-list.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.Sum-list li:hover{
+    background-color: #5e48a1;
+}
+.Sum-list :last-child{
+    border-bottom: none;
+}
+.Sum-list li{
+    border-bottom: solid 1px #5e48a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    margin: 0;
+}
+.Sum-list li a:hover{
+    color: #FF2978;
+}
+.rotated {
+    transform: rotate(180deg);
+}
 header a{
     text-decoration: none;
     color:#FF2978;
 }
-header a:hover{
+.logo a:hover{
     color:#5e48a1 ;
+}
+#BtnSum{
+    background-color: transparent;
+    border: none;
 }
 body{
     margin: 0;
