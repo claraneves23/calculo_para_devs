@@ -36,7 +36,7 @@
         <p>A primitiva \(F(x)\) de uma função \(f(x)\). Ou seja, se, então \(F(x)\) é uma primitiva de \(f(x)\).</p>
         <p>Exemplo:</p>
         <p>Encontre uma função cuja derivada seja \(2x\):</p>
-        <p>\(x^2\) resolve o problema, pois a sua derivada é \(2x)\. Observe que, se \(c\) for constante, a derivada de \((x^2 + c)'\) = \((x^2)'\) + \((c)'\) = \(2x\) + 0 = \(2x\).</p>
+        <p>\(x^2\) resolve o problema, pois a sua derivada é \(2x\). Observe que, se \(c\) for constante, a derivada de \((x^2 + c)'\) = \((x^2)'\) + \((c)'\) = \(2x + 0\)  = \(2x\).</p>
         <h2>Integral Indefinida</h2>
         <p>A integral indefinida de uma função é a família de primitivas dessa função, representada por:</p>
         <p>
@@ -67,6 +67,219 @@
         <p>Exemplo:</p>
         <p>Calcule \(\int(3x^2 + 5\sqrt{x})dx\):</p>
         <p>\(\int(3x^2dx) + \int 5\sqrt{xdx} = 3.\frac{x^{3}}{3} + 5.\frac{2}{3}x^{\frac{3}{2}}+C = x^3 + \frac{10}{3}x^{\frac{3}{2}}+C\)</p>
+        <h3>Linearidade da Integral Indefinida</h3>
+        <p>A propriedade de lineandade da integral indefinida afirma que a integral da soma de funções é a soma das integrais individuais e que constantes multiplicativas podem ser retiradas da integral. Matematicamente, isso é expresso como:</p>
+        <p>
+            \[
+            \int [ \alpha f( x) \ +\ \beta g( x)] \ =\ \alpha \ \int f( x) dx\ +\ \beta \int g( x) dx
+            \]
+        </p>
+        <p>Essa propriedade decorre da linearidade da derivada, garantindo que a operação inversa (integração) também seja linear</p>
+        <p>Exemplo:</p>
+        <p>Calcule a integral indefinida da função:</p>
+        <p>
+            \[
+                f(4x^3 -2x +7x)dx
+            \]
+        </p>
+        <p>Usamos a propriedade da linearidade da integral para separar os termos e aplicar a regra da potência:</p>
+        <p><strong>1. Integral de \(4x^3\).</strong></p>
+        <p>
+            \[
+            \int 4x^{3} dx\ =4.\frac{x^{3+1}}{3+1} \ =\ 4.\frac{x^{4}}{4} \ =\ x^{4}
+            \]
+        </p>
+        <p><strong>2. Integral de \(-2x\).</strong></p>
+        <p>
+            \[
+            \int -2xdx\ =\ -2.\frac{x^{1+1}}{1+1} \ =\ -2.\frac{x^{2}}{2} \ =\ -x^{2}
+            \]
+        </p>
+        <p><strong>3. Integral de 7.</strong></p>
+        <p>
+            \[
+            \int 7dx\ =\ 7x
+            \]
+        </p>
+        <p>Resultado final:</p>
+        <p>
+            \[
+             x^4-x^2+7x+C
+            \]
+        </p>
+        <h3>Determinação de função conhecendo a derivada e uma condição inicial.</h3>
+        <p>Quando conhecemos a derivada de uma função e uma condição inicial, podemos determinar a função original por meio da integração Esse processo é utilizado, por exemplo, para encontrar a posição de um móvel a partir de sua velocidade. A relação básica é:</p>
+        <p>
+            \[
+            \frac{dx}{dy} \ =\ f'( x) \ \rightarrow \ y\ =\ \int f'( x) .dx\ +\ C
+            \]
+        </p>
+        <p>onde C é uma constante determinada pela condição inicial.</p>
+        <p>Exemplo:</p>
+        <p>A aceleração de um móvel em uma trajetória retilínea é dada por:</p>
+        <p>
+            \[
+            A(t) = 0.06t - 0.04
+            \]
+        </p>
+        <p>Onde \(A(t)\) está em \(m/s^2\) e \(t\) em segundos. Sabemos que a velocidade inicial do móvel em \(t = 0\) era de \(3 m/s\).</p>
+        <p>a)Determine a função da velocidade \(V(t)\)</p>
+        <p><strong>1. Velocidade é a integral da aceleração:</strong></p>
+        <p>
+            \[
+            V(t) = \int A(t)dt = \int (0.06t - 0.04)dt
+            \]
+        </p>
+        <p><strong>2. Integramos cada termo separadamente:</strong></p>
+        <p>
+            \[
+             V(t) = 0.06 \frac{t^2}{2} - 0.04t + C
+            \]
+        </p>
+        <p>
+            \[
+            V(t) = 0.03t^2 - 0.04t + C
+            \]
+        </p>
+        <p><strong>3. Usamos a condição inicial \(V(0) = 3\) para encontrar \(C\):</strong></p>
+        <p>
+            \[
+             3 = 0.03(0)^2 - 0.04(0) + C
+            \]
+            \[
+                C = 3
+            \]
+        </p>
+        <p>Portanto, a função da velocidade é:</p>
+        <p>
+            \[
+            V(t) = 0.03t^2 - 0.04t + 3
+            \]
+        </p>
+        <p>b) Determine a velocidade em \(t = 5\) segundos.</p>
+        <p>Substituímos \(t = 5\):</p>
+        <p>
+            \[ V(5) = 0.03(5)^2 - 0.04(5) + 3\]
+        </p>
+        <p>
+            \[ V(5) = 0.03(25) - 0.2 + 3\]
+        </p>
+        <p>
+            \[ V(5) = 0.75 - 0.2 + 3\]
+        </p>
+        <p>
+            \[ V(5) = 3.55 m/s \]
+        </p>
+        <h2>Integral Definida - Teorema Fundamental do Cálculo</h2>
+        <p>O Teorema Fundamental do Cálculo estabelece que se \(F(x)\) é uma primitiva de \(f(x)\), isto é, se \(F'(x) = f(x)\), então a integral definida de \(f(x)\) em um intervalo \([a,b]\) pode ser calculada como a diferença entre os valores da primitiva nos extremos do intervalo:</p>
+        <p>
+            \[\int _{a}^{b} f( x) dx\ =\ F( b) \ -\ F( a)\]
+        </p>
+        <p>Esse teorema implica que a integral definida de uma função contínua \(f(x)\) pode ser interpretada como a área sob a curva de \(f(x)\) entre os pontos \(a\) e \(b\). A integral definida é o limite de somas de Riemann à medida que o tamanho das subdivisões do intervalo se aproxima de zero.</p>
+        <p>Exemplo:</p>
+        <p>Calcular a integral definida de \(f(x) = x^2\) no intervalo \([1, 2]\).</p>
+        <p><strong>1.Calcular a função primitiva de \(f(x) = x^2\):</strong></p>
+        <p>
+            \[F(x) = \frac {x^{2+1}}{2+1}\]
+        </p>
+        <p>
+            \[F(x) = \frac {x^{3}}{3}\]
+        </p>
+        <p><strong>Aplicar o Teorema Fundamental do Cálculo:</strong></p>
+        <p>
+            \[\int _{1}^{2} x^2 dx\ =\ F( 2) \ -\ F( 1)\]
+        </p>
+        <p>Substituímos os valores de \(F(x)\):</p>
+        <p>
+            \[F(2) = \frac {2^3}{3} = \frac {8}{3}\]
+        </p>
+        <p>
+            \[F(1) = \frac {1^3}{3} = \frac {1}{3}\]
+        </p>
+        <p>Portanto:</p>
+        <p>
+            \[\int _{1}^{2} x^2 dx\ =\frac {8}{3} - \frac {1}{3} = \frac {7}{3}\]
+        </p>
+        <h3>Propriedades da Integral Definida</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><strong>Conservação do Sinal</strong></th>
+                    <th><strong>Linearidade</strong></th>
+                    <th><strong>Aditividade</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Se \(f( x) \ \geq \ 0\) em \([a,b]\), então:
+                        \[\int _{a}^{b} f( x) dx\ \geq \ 0\]
+                    </td>
+                    <td>Se \(f(x)\) e \(g(x)\) são funções contínuas em \([a,b]\), e \(\alpha \), \(\beta \) são constantes reais, então:</td>
+                    <td>Se \(f(x)\) é contínua em \([a,b]\) e \(c ∈ [a,b]\), então:</td>
+                </tr>
+                <tr>
+                    <td>Se \(f(x) < 0\) em \([a,b]\), então:
+                    \[\int _{a}^{b} f( x) dx\ < 0\]</td>
+                    <td>\[\int [ \alpha f( x) \ +\ \beta g( x)] \ =\ \alpha \ \int f( x) dx\ +\ \beta \int g( x) dx\]</td>
+                    <td>\[\int _{a}^{b} f( x) dx\ =\ \ \int _{a}^{c} f( x) dx\ \ +\ \ \ \int _{c}^{b} f( x) dx\ \] </td>
+                </tr>
+                <tr>
+                    <td>A integral reflete o sinal da função. Se a função é positiva, a área é positiva, se é negativa, a área é negativa</td>
+                    <td>A integral de uma combinação linear de funções é a combinação linear das integrais</td>
+                    <td>A integral pode ser dividida em partes menores.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Exemplo</p>
+        <p>Dados:</p>
+        <p>
+            \(\int _{a}^{b} f( x) dx\ = 3\)    e   \(\int _{a}^{b} g( x) dx\ = -4\)
+        </p>
+        <p>Calcule:</p>
+        <p>a)\(\int _{a}^{b} 2f( x) dx\ \)</p>
+        <p><strong>1. Use a propriedade da linearidade:</strong></p>
+        <p>
+            \[
+            \int _{a}^{b} 2f( x) dx\ = 2 \int _{a}^{b}f( x) dx\ 
+            \]
+        </p>
+        <p><strong>2. Substitua o valor dado:</strong></p>
+        <p>\[2.3 = 8\]</p>
+        <p>Resposta: 6</p>
+        <p>b)\(\int _{a}^{b} (f( x) + g(x)) dx\ \)</p>
+        <p><strong>1. Use a propriedade da linearidade</strong></p>
+        <p>
+            \[\int _{a}^{b} (f( x) + g(x)) dx\ = \int _{a}^{b} f( x)dx + \int _{a}^{b} g( x)dx  \]
+        </p>
+        <p><strong>2. Substitua os valores dados:</strong></p>
+        <p>\[3 + (-4) = -1\]</p>
+        <p>Resposta: -1</p>
+        <p>c)\(\int _{a}^{b} (-3f( x) + +5g(x)) dx\)</p>
+        <p><strong>1. Use a propriedade da linearidade:</strong></p>
+        <p>
+            \[\int _{a}^{b} (-3f( x) + +5g(x)) dx = -3\int _{a}^{b} f(x)dx + 5\int _{a}^{b} g(x)dx\]
+        </p>
+        <p><strong>2. Substitua os valores dados:</strong></p>
+        <p>\[-3(3) +(-4) = -29\]</p>
+        <p>Resposta: -29</p>
+        <h3>Interpretação Geométrica da Integral Definida</h3>
+        <p>A integral definida de uma função \(f(x)\) no intervalo \([a, b]\) representa a área sob a curva da função \(f(x)\) no referido intervalo. Quando \(f(x) ≥ 0\) em \([a, b]\), essa área corresponde à integral:</p>
+        <p>
+            \[m(A) = \int _{a}^{b} f(x)dx \]
+        </p>
+        <p>Essa área pode ser aproximada pela soma de retângulos cujas alturas são definidas pelo valor minimo e máximo da função nos subintervalos. No limite quando o tamanho dos subintervalos tende a zero, obtemos a integral definida.</p>
+        <img src="../img/aproximacao_de_integral_com_retangulos.png" alt="Aproximação de Integral com Retângulos">
+        <h3>Função Positiva</h3>
+        <p>A integral definida \(\int _{a}^{b} f(x)dx\) calcula a área sob a curva de \(f(x)\) acima do eixo \(x\).</p>
+        <p>Exemplo:</p>
+        <p>Calcule a área sob a curva \(f(x) = x^2\) entre \(x = - 1\) e \(x = 2\).</p>
+        <p><strong>1. A função \(f(x) = x^2\) é sempre positiva.</strong></p>
+        <p><strong>2. Calcule a integral definida:</strong></p>
+        <p>
+            \[\int _{1}^{2} x^{2} dx\ =\ \Bigl[\frac{x^{2+1}}{2+1}\Bigr]_{-1}^{2} =\ \Bigl[\frac{x^{3}}{3}\Bigr]_{-1}^{2} \ =\ \frac{2^{3}}{3} \ -\ \frac{( -1)^{3}}{3} \ =\ \frac{8}{3} \ -\left( \ \frac{-1}{3}\right) =\ \frac{8}{3} \ +\ \frac{1}{3} \ =\ \frac{9}{3} \ =\ 3\]
+        </p>
+        <p>Resposta: A área é 3 unidades quadradas</p>
+        <img src="../img/funcao_positiva.png" alt="Função Positiva">
         <button id="backToTop">
             <i id="arrow" class="ri-arrow-up-s-line" style="color: #FF2978; font-size: 35px;"></i>
         </button>
