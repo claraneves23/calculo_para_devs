@@ -25,7 +25,7 @@ header i{
     font-family: "Doto", serif;
 }
 .Sum-list a{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     font-family: "Montserrat", serif;
 }
@@ -37,6 +37,7 @@ header i{
     display: flex;
     flex-direction: column;
     position: absolute;
+    width: 20vw;
     top: 45px;
     right: 0;
     background-color: #18074a;
@@ -51,6 +52,7 @@ header i{
     transition: 0.3s ease;
     pointer-events: none;
     overflow: hidden;
+    z-index: 1000;
 }
 .Sum-list.show {
     opacity: 1;
@@ -66,16 +68,13 @@ header i{
 .Sum-list li{
     border-bottom: solid 1px #5e48a1;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 1vh;
     margin: 0;
 }
 .Sum-list li a:hover{
     color: #FF2978;
-}
-.rotated {
-    transform: rotate(180deg);
 }
 header a{
     text-decoration: none;
