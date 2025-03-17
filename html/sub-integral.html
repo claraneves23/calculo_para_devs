@@ -63,7 +63,7 @@
         <li>\(\int x^{2} dx\ =\ \frac{x^{3}}{3} \ +\ C\)</li>
         <li>\(\int \sqrt{xdx} \ =\ \int x^{\frac{1}{2}} dx\ =\ \frac{x^{\frac{1}{2} \ +\ 1}}{\frac{1}{2} \ +\ 1} \ +\ C=\ \frac{x^{\frac{3}{2} \ }}{\frac{3}{2}} \ +\ C\ =\ \frac{2}{3} x^{\frac{3}{2}} \ +\ C\)</li>
         <h3>Combinação Linear de Funções Integráveis</h3>
-        <p>A integral da soma de suas funções é a soma das integrais individuais, e a integral do produto de uma constante por uma função é o produto da constante pela integal dessa função.</p>
+        <p>A integral da soma de suas funções é a soma das integrais individuais, e a integral do produto de uma constante por uma função é o produto da constante pela integral dessa função.</p>
         <p>Exemplo:</p>
         <p>Calcule \(\int(3x^2 + 5\sqrt{x})dx\):</p>
         <p>\(\int(3x^2dx) + \int 5\sqrt{xdx} = 3.\frac{x^{3}}{3} + 5.\frac{2}{3}x^{\frac{3}{2}}+C = x^3 + \frac{10}{3}x^{\frac{3}{2}}+C\)</p>
@@ -280,6 +280,152 @@
         </p>
         <p>Resposta: A área é 3 unidades quadradas</p>
         <img src="../img/funcao_positiva.png" alt="Função Positiva">
+        <h3>Função Negativa</h3>
+        <p>A integral \(\int _{a}^{b} f(x)dx\) calcula a área acima da curva de \(f(x)\) e abaixo do eixo x, mas com sinal negativo. Para obter a área real, use o valor absoluto:</p>
+        <p>
+            \[A\ =\ \Bigl|\int _{a}^{b} f( x) dx\Bigl| \ \]
+        </p>
+        <p>Exemplo:</p>
+        <p><strong>1. A função \(x^3\) é negativa em \([-2,0]\) e positiva em \([0,1]\).</strong></p>
+        <p><strong>2. Divida a integral em duas partes:</strong></p>
+        <p>
+            \[
+            \int _{-2}^{1} x^{3} dx\ =  \int _{-2}^{0} x^{3}dx\ +  \int _{0}^{-1} x^{3}dx\
+            \]
+        </p>
+        <p><strong>3. Calcule cada parte:</strong></p>
+        <p>
+            \[
+            \int _{-2}^{0} x^{3} dx\ = \Bigl[\frac{\ x^{4}}{4}\Bigr]_{-2}^{0} =\ 0\ -\ \frac{( -2)^{4}}{4} \ =-\ \frac{16}{4} \ =\ -4
+            \]
+        </p>
+        <p>
+            \[
+            \int _{0}^{1} x^{3} dx\ = \Bigl[\frac{\ x^{4}}{4}\Bigr]_{0}^{1} =\ =\ \frac{( 1)^{4}}{4} \ - 0 = \frac{1}{4} 
+            \]
+        </p>
+        <p><strong>4. Some os valores absolutos para obter a área total:</strong></p>
+        <p>
+            \[
+            A = \left| \frac{-4}{1} \right| +  \left| \frac{1}{4} \right| = \frac{16+1}{4} = \frac{17}{4}
+            \]
+        </p>
+        <p>Resposta: \(\frac{17}{4}\) unidades quadradas.</p>
+        <img src="../img/funcao_negativa.png" alt="funcao negativa">
+        <h3>Funções que cruzam o eixo x e Área entre duas funções</h3>
+        <h4>Funções que cruzam o Eixo x</h4>
+        <p>Se \(f(x)\) cruza que o eixo \(x\) no intervalo \([a,b]\), divida o intervalo em partes onde \(f(x)\) é positiva e onde é negativa. Calcule as áreas separadamente e some os valores absolutos.</p>
+        <h4>Área entre duas funções</h4>
+        <p>Se \(f( x) \geq \ g( x)\) em \([a,b]\), a área entre as duas curvas é dada por:</p>
+        <p>
+            \[
+            A = \int _{a}^{b} (f( x)-g(x)) dx\ 
+            \]
+        </p>
+        <p>Exemplo</p>
+        <p>Calcule  a área entre as curvas \(f(x) = x^2\) e \(g(x) = x\) no intervalo \([0,1]\).</p>
+        <p><strong>1. Verifique qual função está acima da outra no intervalo \([0,1]\)</strong></p>
+        <li>Para \(x ∈ [0,1], f(x) = x^2 < g(x) = x \)</li>
+        <p><strong>2. Calcule a integral da diferença:</strong></p>
+        <p>
+            \[
+            A = \int _{0}^{1} (f( x)-g(x)) dx = \int _{0}^{1} (x-x^2)dx\ 
+            \]
+        </p>
+        <p><strong>3. Resolva a integral:</strong></p>
+        <p>
+            \[\int _{0}^{1} (x-x^2)dx\ = \Bigl[\frac{x^{2}}{2} \ -\ \frac{x^{3}}{3}\Bigr]_{0}^{1} \ =\ \left( \ \frac{1}{2} \ -\ \frac{1}{3}\right) \ -\ ( 0-0) \ =\ \ \frac{1}{2} \ -\ \frac{1}{3} =\ \frac{3-2}{6} \ =\ \frac{1}{6}\]
+        </p>
+        <p>Resposta: A área é \(\frac{1}{6}\) unidades quadradas.</p>
+        <h3>Deslocamento e Espaço Percorrido</h3>
+        <p><strong>1. Deslocamento \(\Delta S\)</strong></p>
+        <li>É a diferença entre a posição final e posição inicial do objeto.</li>
+        <li>Pode ser calculada usando a integral da velocidade \(V(t)\): </li>
+        <p>
+            \[
+            \Delta S = S(b) - S(a) = \int _{a}^{b} V(t)dt
+            \]
+        </p>
+        <li>O deslocamento leva em conta apenas a posição inicial e final, independentemente do caminho percorrido.</li>
+        <p><strong>2. Espaço Percorrido (EP):</strong></p>
+        <li>É a distância total percorrida pelo objeto, considerando todo o trajeto.</li>
+        <li>Pode ser calculado somando as áreas sob a curva da velocidade (em módulo), pois a velocidade pode ser positiva ou negativa.</li>
+        <p>
+            \[EP = \int _{a}^{b} \Bigl|V(t)\Bigl| \ dt \]
+        </p>
+        <li>O espaço percorrido sempre será um valor positivo.</li>
+        <li>A fórmula do material \(EP = \int _{a}^{c} V(t)dt + \int _{c}^{b} (-V(t)dt) \) é uma forma de calcular o espaço percorrido quando a velocidade muda de sinal.</li>
+        <li>A fórmula simplificada \((EP = \int _{a}^{b} \Bigl|V(t)\Bigl| \ dt)\) é uma generalização que funciona em qualquer caso, sem precisar dividir o intervalo.</li>
+        <p>Exemplo</p>
+        <p>Um ponto material se desloca em trajetória retilínea com velocidade no instante \(t ≥ 0\) (em segundos) dada por:</p>
+        <p>
+            \[
+            V( t) \ =\ \left( 2t^{2} \ -\ 4t\right) \ m/s
+            \]
+        </p>
+        <p>Calcule:</p>
+        <p>a) O deslocamento entre os instantes \(t = 0 s\) e \(t = 3 s\)</p>
+        <p><strong>1. O deslocamento é dado pela integral da velocidade:</strong></p>
+        <p>
+            \[\Delta S = \int _{0}^{3} V(t)dt = \int _{0}^{3} (2t^2 - 4t)dt \]
+        </p>
+        <p><strong>2. Calcule a integral:</strong></p>
+        <p>
+            \[
+            \int _{0}^{3} (2t^2 - 4t)dt = \frac{2t^3}{3} - \frac {4t^2}{2} + C = \frac {2t^3}{3} - 2t^2 + C
+            \]
+        </p>
+        <p><strong>3. Avalie nos limites \(t = 0 s\) e \(t = 3 s\): </strong></p>
+        <p>
+            \[
+            \Delta S = \Bigl[\frac{\ {2.(3)^3}}{3} - 2(3)^2\Bigr] -  \Bigl[\frac{\ {2.(0)^3}}{3} - 2(0)^2\Bigr] = \left( \ \frac{54}{3} \ -\ 18\right) - (0) = 18 - 18 = 0
+            \]
+        </p>
+        <p>O deslocamento é \(0\ metros\). Isso significa que o objeto retornou à posição inicial após \(3\ segundos\) .</p>
+        <p>b) O espaço percorrido entre os instantes \(t = 0 s\) e \(t = 3 s\). </p>
+        <p><strong>1. Primeiro, determine onde a velocidade \(V( t) \ =\ \left( 2t^{2} \ -\ 4t\right) \ m/s\) é positiva ou negativa </strong></p>
+        <li>Resolva \(V(t) = 0\):</li>
+        <p>
+            \[2t^2 - 4t = 0\]
+            \[t(2t-4) = 0\]
+            \[t = 0\] 
+            \[2t - 4 =0\]
+            \[2t =4\]
+            \[t = \frac{4}{2}\]
+            \[t = 2\] 
+        </p>
+        <li>A velocidade é negativa em \(t ∈ (0,2) \) e positiva \(t ∈ (2,3) \). </li>
+        <p><strong>2. Calcule o espaço percorrido em cada intervalo:</strong></p>
+        <li>De  \(t = 0 \) a \(t = 2 \):</li>
+        <p>
+            \[EP_{1} =  \int _{0}^{2} V(t)dt =   \int _{0}^{2} (-V(t)dt) = \int _{0}^{2} (4t-2t^2) \]
+        </p>
+        <p>Calcule a integral:</p>
+        <p>\[\int (4t - 2t^2)dt = \frac{4t^2}{2} - \frac{2t^3}{3} + C = 2t^2 - \frac{2t^3}{3} + C\]</p>
+        <p>Avalie nos limites \(t = 0 \) e \(t = 2 \):</p>
+        <p>
+            \[EP_{1} = \Bigl[ 2.( 2)^{2} -\ \frac{2( 2)^{3}}{3}\Bigr] \ -\ 0\ =\ \left( \ 8-\ \frac{16}{3}\right) \ =\ \frac{24}{3} \ -\ \frac{16}{3} \ =\ \frac{8}{3} \ m \]
+        </p>
+        <li>De  \(t = 2 \) a \(t = 3 \):</li>
+        <p>
+            \[EP_{2} =  \int _{2}^{3} \Bigl|V(t)\Bigl| \ dt \ =   \int _{2}^{3} (2t^2- 4)dt \]
+        </p>
+        <p>Calcule a integral:</p>
+        <p>
+            \[
+            \int _{2}^{3} (2t^2- 4)dt = \frac{2t^3}{3} - \frac{4t^2}{2} + C = \frac{2t^3}{3} -2t^2 + C
+            \]
+        </p>
+        <p>Avalie nos limites \(t = 2 \) a \(t = 3 \): </p>
+        <p>
+            \[
+            \Bigl[\frac{2.( 3)^{3}}{3} \ -\ 2( 3)^{2}\Bigr] \ -\ \Bigl[\frac{2.( 2)^{3}}{3} \ -\ 2( 2)^{2}\Bigr] \ =\ ( 18-18) \ -\ \ \left( \ \frac{16}{3} \ -\ 8\right) \ =\ 0\ -\ \ \left( \ \frac{16}{3} \ -\ \frac{24}{3}\right) = \ \frac{8}{3} \ m 
+            \]
+        </p>
+        <p><strong>3. Some os espaços percorridos:</strong></p>
+        <p>
+            \[EP_{1} + EP_{2} = \frac{8}{3} + \frac{8}{3} = \frac{16}{3} \ m \]
+        </p>
         <button id="backToTop">
             <i id="arrow" class="ri-arrow-up-s-line" style="color: #FF2978; font-size: 35px;"></i>
         </button>
