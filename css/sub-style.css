@@ -25,7 +25,7 @@ header i{
     font-family: "Doto", serif;
 }
 .Sum-list a{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     font-family: "Montserrat", serif;
 }
@@ -65,8 +65,11 @@ header i{
 .Sum-list :last-child{
     border-bottom: none;
 }
-.Sum-list li{
+.Sum-list a{
     border-bottom: solid 1px #5e48a1;
+}
+.Sum-list li{
+    color: #FF2978;
     display: flex;
     justify-content: left;
     align-items: center;

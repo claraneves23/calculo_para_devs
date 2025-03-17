@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
         let scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
 
-        if (scrollPercent > 40) {
+        if (scrollPercent > 20) {
             backToTop.style.visibility = "visible";
             setTimeout(() => {
                 backToTop.style.opacity = "1";
                 backToTop.style.transform = "scale(1)";
                 backToTop.style.boxShadow = "0 0px 5px black"
             }, 10);
-        } else if(scrollPercent < 40) {
+        } else if(scrollPercent < 20) {
             backToTop.style.transform = "scale(0.8)";
             backToTop.style.opacity = "0";
             setTimeout(() => {

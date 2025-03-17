@@ -14,10 +14,28 @@ document.addEventListener("DOMContentLoaded", function () {
         let listItem = document.createElement("li");
         let link = document.createElement("a");
         link.href = "#" + id;
-        link.innerText = heading.innerText; // Usa o texto do <h2>
+        listItem.innerText = heading.innerText; // Usa o texto do <h2>
 
-        listItem.appendChild(link);
-        SumList.appendChild(listItem);
+        link.appendChild(listItem);
+        SumList.appendChild(link);
+    });
+
+    let links = document.querySelectorAll("#SumList a");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault(); // Evita o comportamento padrão do link
+
+            let targetId = this.getAttribute("href").substring(1); // Pega o ID do destino
+            let targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: "smooth", // Faz a rolagem suave
+                    block: "start" // Garante que o título fique no topo
+                });
+            }
+        });
     });
 
     // Alternar a classe 'show' ao clicar no botão
