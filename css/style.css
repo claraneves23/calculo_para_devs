@@ -122,7 +122,7 @@ footer{
 @media screen and (max-width: 768px) {
     .content {
         flex-direction: column;
-        margin: 5vh 5vw;
+        margin: 5vh 5vw 0vh 5vw;
     }
     
     header {
@@ -156,13 +156,16 @@ footer{
     }
     
     .img-headline {
-        flex: 100%;
-        text-align: center;
+        display: none;
     }
     
     ul {
         margin: 0;
         padding: 5%;
+    }
+
+    footer{
+        margin-top: 3vh;
     }
 
     .logo-rodape{
