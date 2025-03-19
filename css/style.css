@@ -7,7 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 5vh 10vw; /* Ajusta margens externas */
+    margin: 5vh 15vw; /* Ajusta margens externas */
 }
 header{
     display: flex;
@@ -31,7 +31,7 @@ body{
 }
 .text {
     color: #FF2978;
-    font-size: 34px;
+    font-size: 2rem;
     font-family: "Doto", serif;
 }
 .headline{

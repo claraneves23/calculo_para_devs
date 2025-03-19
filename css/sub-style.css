@@ -29,17 +29,13 @@ header i{
     font-weight: 400;
     font-family: "Montserrat", serif;
 }
-.container {
-    position: relative;
-    display: inline-block;
-}
 .Sum-list{
     display: flex;
     flex-direction: column;
     position: absolute;
     width: 20vw;
     top: 45px;
-    right: 0;
+    right: 10px;
     background-color: #18074a;
     list-style: none;
     padding: 0;
@@ -48,7 +44,7 @@ header i{
     box-shadow:0px 5px 15px black;
     opacity: 0;
     transform: scale(0);
-    transform: translateY(-4vh);
+    transform: translateY(-10vh);
     transition: 0.3s ease;
     pointer-events: none;
     overflow: hidden;
@@ -56,7 +52,7 @@ header i{
 }
 .Sum-list.show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(2vh);
     pointer-events: auto;
 }
 .Sum-list li:hover{
@@ -98,6 +94,9 @@ body{
 .titulo{
     text-align: center;
 }
+.content{
+    margin: 0vh 15vw;
+}
 .content h1{
     font-weight: 800;
     font-size: 35px;
@@ -106,7 +105,7 @@ body{
     color:#18074a;
 }
 .content h2{
-    margin-top: 10vh !important;
+    margin-top: 5vh !important;
 }
 .content h3{
     margin-top: 5vh !important;
@@ -210,9 +209,18 @@ footer{
         overflow: hidden;
     }
     header {
-        flex-direction: column;
+        display: flex;
         align-items: center;
         text-align: center;
+        overflow: hidden;
+        max-width: 100%;
+        padding: 1%;
+    }
+    header button{
+        padding: 2vh 0vw 1vh 0vw;
+    }
+    header span{
+        font-size: 2rem;
     }
     .headline {
         flex: 100%;
@@ -223,18 +231,30 @@ footer{
     }
     ul {
         margin: 0;
-        padding: 5%;
     }
     .Sum-list {
+        box-shadow: none;
         width: 100%;
-        position: static;
         transform: none;
+    }
+    .Sum-list.show{
+        border-radius: 0%;
+        border: none;
+        padding: 0%;
+        margin: 0%;
+        transform: none;
+        position: relative;
         opacity: 1;
         pointer-events: auto;
+        top: 0px;
+        right: 0px;
+    }
+    .Sum-list a {
+        border-bottom: none;
     }
     .Sum-list li {
         text-align: center;
-        padding: 10px;
+        padding: 0;
     }
     .content h1, .content h2, .content h3 {
         text-align: center;
@@ -244,8 +264,8 @@ footer{
         width: 100%;
     }
     #backToTop {
-        bottom: 2vh;
-        right: 2vw;
+        bottom: 1vh;
+        right: 1vw;
     }
 
     footer{
