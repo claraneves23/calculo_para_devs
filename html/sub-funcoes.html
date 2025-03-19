@@ -15,236 +15,259 @@
     </script>
 </head>
 <body>
-    <body>
-       <header class="logo">
-            <a href="../index.html">Cálculo para Devs</a>
-            <div class="container">
-                <button id="BtnSum">
-                    <i class="ri-list-unordered" style="font-size:25px; color: #FF2978;"></i>
-                </button>
-                <ul id="SumList" class="Sum-list"></ul>
-                <script src="../js/sum.js"></script>
+    <header class="logo">
+        <a href="../index.html">Cálculo para Devs</a>
+        <div class="container">
+            <button id="BtnSum">
+                <i class="ri-list-unordered" style="font-size:25px; color: #FF2978;"></i>
+            </button>
+            <ul id="SumList" class="Sum-list"></ul>
+            <script src="../js/sum.js"></script>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="titulo">
+                <h1>Funções</h1>
             </div>
-        </header>
-        
-        <main>
-            <div class="content">
-                <div class="titulo">
-                    <h1>Funções</h1>
-                </div>
-                    <h2>Definição de Função</h2>
-                        <p>Sejam \( A \) e \( B \) dois conjuntos não vazios. Uma função \( f \) de \( A \) para \( B \), representada como \( f:A \to B \), é uma regra que liga cada elemento de \( A \) a exatamente um elemento de \(B\).</p>
-       
-                    <h2>Domínio, Contradomínio e Imagem</h2>
-                        <p>
-                            Exemplo:
-                                    <ul>
-                                        <li>Domínio: \( A = \{1, 2, 3\} \)</li>
-                                        <li>Contradomínio: \( B = \{10, 20, 30, 40\} \)</li>
-                                        <li>Imagem: \( \text{Im}(f) = \{10, 20, 30\} \)</li>
-                                        <li>X ∈ A e Y ∈ B</li>
-                                    </ul>
-                        <img src="../img/representar_funçoes_conjunto.png">
-                        </p>
-                        <p>A função pode ser definida por:</p>
-                        <p>$$ f(x) = 10x $$</p>
+            <h2>Definição de Função</h2>
+            <p>Sejam \( A \) e \( B \) dois conjuntos não vazios. Uma função \( f \) de \( A \) para \( B \),
+                representada como \( f:A \to B \), é uma regra que liga cada elemento de \( A \) a exatamente um
+                elemento de \(B\).</p>
 
-                        <h3>Análise Gráfica</h3>
-                            <p>Ao analisar um gráfico, podemos encontrar o domínio e a imagem observando os valores de \(x\) e \(y\), que a função atinge. Os pontos com círculo cheio estão incluídos no domínio/imagem, enquanto os pontos com círculo vazio não estão. 
-                            </p>
-                            <img src="../img/imagem_dominio_gráfico.png">
+            <h2>Domínio, Contradomínio e Imagem</h2>
+            <p>
+                Exemplo:
+            <ul>
+                <li>Domínio: \( A = \{1, 2, 3\} \)</li>
+                <li>Contradomínio: \( B = \{10, 20, 30, 40\} \)</li>
+                <li>Imagem: \( \text{Im}(f) = \{10, 20, 30\} \)</li>
+                <li>X ∈ A e Y ∈ B</li>
+            </ul>
+            <img src="../img/representar_funçoes_conjunto.png">
+            </p>
+            <p>A função pode ser definida por:</p>
+            <p>$$ f(x) = 10x $$</p>
 
-                        <h2>Função Constante</h2>
-                            <p>A fórmula geral da função constante é \(f(x)=c\), que significa que para cada valor do Domínio o valor da Imagem se manterá o mesmo, ou seja, para cada valor de \(x\) o \(y\) será o mesmo.</p>
-                            <p>Exemplo:</p>
-                            <iframe src="https://www.desmos.com/calculator/iux6kbjmpx?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+            <h3>Análise Gráfica</h3>
+            <p>Ao analisar um gráfico, podemos encontrar o domínio e a imagem observando os valores de \(x\) e \(y\),
+                que a função atinge. Os pontos com círculo cheio estão incluídos no domínio/imagem, enquanto os pontos
+                com círculo vazio não estão.
+            </p>
+            <img src="../img/imagem_dominio_gráfico.png">
 
-                        <h2>Função Linear</h2>
-                        <p>Uma função linear \(f(x)=ax\) tem gráfico em forma de reta que passa por \((0,0)\) e \((1,a)\). Seu comportamento depende de <strong>\(a\)</strong>.</p>
-                        <img src="../img/sinal_funcao_linear.png">
+            <h2>Função Constante</h2>
+            <p>A fórmula geral da função constante é \(f(x)=c\), que significa que para cada valor do Domínio o valor da
+                Imagem se manterá o mesmo, ou seja, para cada valor de \(x\) o \(y\) será o mesmo.</p>
+            <p>Exemplo:</p>
+            <iframe src="https://www.desmos.com/calculator/iux6kbjmpx?embed" width="500" height="500"
+                style="border: 1px solid #ccc" frameborder=0></iframe>
 
-                        <h2>Função Afim</h2>
-                        <p>A função afim é representada pela seguinte função: \(f(x)= ax+b\). Assim como a função linear seu comportamento gráfico também depende de \(a\), o qual deve ser diferente de 0. <strong>Sendo \(a\) chamado de coeficiente angular e \(b\) de coeficiente linear.</strong></p>
-                        <p>O gráfico a seguir representa a função:</p>
-                        <p>$$ f(x)= 2x + 1 $$</p>
+            <h2>Função Linear</h2>
+            <p>Uma função linear \(f(x)=ax\) tem gráfico em forma de reta que passa por \((0,0)\) e \((1,a)\). Seu
+                comportamento depende de <strong>\(a\)</strong>.</p>
+            <img src="../img/sinal_funcao_linear.png">
 
-                        <iframe src="https://www.desmos.com/calculator/dosbbkgw9g?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+            <h2>Função Afim</h2>
+            <p>A função afim é representada pela seguinte função: \(f(x)= ax+b\). Assim como a função linear seu
+                comportamento gráfico também depende de \(a\), o qual deve ser diferente de 0. <strong>Sendo \(a\)
+                    chamado de coeficiente angular e \(b\) de coeficiente linear.</strong></p>
+            <p>O gráfico a seguir representa a função:</p>
+            <p>$$ f(x)= 2x + 1 $$</p>
 
-                        <h3>Como montar o gráfico da função afim:</h3>
-                            <ul>
-                                <li>Identifique os elementos da função:</li>
-                                    <p>2 é o coeficiente angular (inclinação da reta).</p>
-                                    <p>1 é o coeficiente linear (interseção com o eixo y).</p>
-                          
-                                <li>Encontre o ponto de interseção com o eixo y:</li>
-                                    <p>Substitua x = 0 na função: \(f(0)=2(0)+1=1\)</p>
-                                    <p>O ponto é \((0,1)\)</p>
-            
-                                <li>Escolha outro valor de x para encontrar um segundo ponto:</li>
-                                    <p>Exemplo: Para x=1, \(f(1)=2(1)+1=3\)</p>
-                                    <p>O ponto é \((1,3)\).</p>
-                            </ul>
-            
+            <iframe src="https://www.desmos.com/calculator/dosbbkgw9g?embed" width="500" height="500"
+                style="border: 1px solid #ccc" frameborder=0></iframe>
 
-                        <h4>Encontrar a função a partir do gráfico</h4>
-                            <ul>
-                                <li>Identifique a interseção com o eixo y (coeficiente linear):</li>
-                                    <p>No gráfico, observe onde a reta cruza o eixo y. O valor de y nesse ponto é o valor do coeficiente linear (\(b\)). </p>
-                                    <p>No caso de \(f(x)=2x+1\), a reta cruza o eixo y no ponto \((0,1)\), logo \(b=1\).</p>
-                                <li>Identifique a inclinação da reta (coeficiente angular):</li>
-                                    <p> A fórmula do coeficiente angular é:
-                                        \[
-                                            a = \frac{y - y_{0}}{x - x_{0}}
-                                        \]
-                                    </p>
-                                <li>​​No gráfico, observe dois pontos quaisquer na reta, como \((0,1)\)e \((1,3)\).</li>
-                                    <p>Substituindo os valores na fórmula:
-                                        \[
-                                            a=\frac{3-1}{1-0}
-                                        \]
-                                        \[
-                                            a=2.
-                                        \]
-                                    </p>
-                                    <p>Logo, \(a=2\) e \(b=1\), sendo assim, a função que o gráfico representa é: \(f(x)= 2x+1\)</p>
-                            </ul> 
-                    <h4>Raíz da Função</h4>
-                        <p>É o valor que torna a função zero.</p>
-                        <p>Exemplo:
-                        \[
-                            f(x) =\ 2x\ +\ 1
-                        \]
-                        \[
-                        0 =\ 2x\ +\ 1
-                        \]
-                        \[
-                        x=-\frac{1}{2}
-                        \]
-                        </p>
+            <h3>Como montar o gráfico da função afim:</h3>
+            <ul>
+                <li>Identifique os elementos da função:</li>
+                <p>2 é o coeficiente angular (inclinação da reta).</p>
+                <p>1 é o coeficiente linear (interseção com o eixo y).</p>
 
-                    <h2>Função Quadrática</h2> 
-                    <p>Uma função quadrática \(f:R\rightarrow R\) é uma função da forma \(f(x)=ax^2+bx+c\) onde a, b e c são números reais e \(a≠0\). Seu gráfico é representado por uma parábola, <strong>se o
-                    \(a\) (coeficiente angular) for positivo a concavidade será para cima, caso seja negativo a concavidade será para baixo.</strong></p>
-                    <img src="../img/sentido_da_concavidade.png">
+                <li>Encontre o ponto de interseção com o eixo y:</li>
+                <p>Substitua x = 0 na função: \(f(0)=2(0)+1=1\)</p>
+                <p>O ponto é \((0,1)\)</p>
 
-                    <h3>Como montar o gráfico da função quadrática:</h3>
-                    <ul>
-                        <li>Achar as raízes:</li>
-                            <p>Igualar a função a zero e resolver a equação de segundo grau. Essas raízes serão a intersecção do gráfico com o eixo X.</p>
-                        <li>Achar o vértice:</li>
-                                <p>
-                                \[
-                                x_{v}=\frac{-b}{2a}
-                                \]
-                                \[
-                                y_{v} =\frac{-\Delta }{4a}
-                                \]
-                                </p>
-                        <li>Determinar o ponto onde a parábola cruza o eixo y</li>
-                            <p>Para encontrar o ponto de interseção com o eixo y, basta substituir x=0 na equação.</p>
-                            <p>Exemplo:
-                            \( y=x^{2} -4x+3\)
-                            </p>
-                        <li>1° Encontrar as raízes:</li>
-                            <p>
-                                \begin{array}{l}
-                                \Delta =b^{2} -4ac\\
-                                \Delta =( -4)^{2} -4.( 1) .( 3)\\
-                                \Delta =16-12\\
-                                \Delta =4
-                                \end{array}
-                            </p><br>
-                            <p>
-                            \begin{array}{l}
-                            x=\frac{-b\pm \sqrt{\delta }}{2a}\\
-                            \\
-                            x_{1} =\frac{-( -4) +\sqrt{4}}{2.( 1)} =\frac{4+2}{2} =\frac{6}{2} =3\\
-                            \\
-                            x_{2} =\frac{-( -4) -\sqrt{4}}{2.( 1)} =\frac{4-2}{2} =\frac{2}{2} =1
-                            \end{array}
-                            </p>
-                            <li>2° Encontrar os vértices:</li>
-                                <p>
-                                \begin{array}{l}
-                                x_{v} =\frac{-b}{2a}\\
-                                \\
-                                x_{v} =\frac{-( -4)}{2.( 1)} =\ \frac{4}{2} =\ 2\\
-                                \\
-                                y_{v} =\frac{-\delta }{4a}\\
-                                \\
-                                y_{v} =\frac{-4}{4.( 1)} =\frac{-4}{4} =-1
-                                \end{array}
-                            </p>
-                    </ul>
-                    <iframe src="https://www.desmos.com/calculator/alngtvn35d?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-                    <h2>Função Exponencial</h2>
-                        <p>A função exponencial de base a é uma função que pega um número real x  e calcula \(f(x)=a^x\), onde a é um número positivo diferente de 1 (ou seja, \(a>0\) e  \(a≠1\)), e x pode ser qualquer número real. A base a é o número que é elevado à potência x.</p>
-                        <img src="../img/propriedades_função_exponencial.png" alt="">
-                <h3>Como montar o gráfico da função exponencial:</h3>
-                    <p>Exemplo:
-                     \[ 
-                        f(x)=2⋅2^x
+                <li>Escolha outro valor de x para encontrar um segundo ponto:</li>
+                <p>Exemplo: Para x=1, \(f(1)=2(1)+1=3\)</p>
+                <p>O ponto é \((1,3)\).</p>
+            </ul>
+
+
+            <h4>Encontrar a função a partir do gráfico</h4>
+            <ul>
+                <li>Identifique a interseção com o eixo y (coeficiente linear):</li>
+                <p>No gráfico, observe onde a reta cruza o eixo y. O valor de y nesse ponto é o valor do coeficiente
+                    linear (\(b\)). </p>
+                <p>No caso de \(f(x)=2x+1\), a reta cruza o eixo y no ponto \((0,1)\), logo \(b=1\).</p>
+                <li>Identifique a inclinação da reta (coeficiente angular):</li>
+                <p> A fórmula do coeficiente angular é:
+                    \[
+                    a = \frac{y - y_{0}}{x - x_{0}}
                     \]
-                    <ul>
-                        <li>Identifique os Parâmetros:
-                            <p>\(a=2\) (coeficiente).</p>
-                            <p>\(b=2\) (base da exponencial, como \(b>1\), a função é crescente).</p>
-                        </li>
-                        <li>Calcule Pontos Chave:
-                            <p>Escolha valores para x (por exemplo, -2, -1, 0, 1, 2).</p>
-                            <p>Calcule \(f(x)\) para cada x.</p>
-                        </li>
-                        <li>x = -2</li>
-                            <p>
-                                \[f( -2) =\ 2.2^{-2} =2.\left(\frac{1}{4}\right) =0,5\]
-                            </p>
-                        <li>x = -1</li>
-                            <p>
-                                \[f( -1) =2.2^{-1} =2.\left(\frac{1}{2}\right) =1\]
-                            </p>
-                    <li>x = 0</li>
-                            <p>
-                                \[
-                                    f( 0) =2.2^{0} =2.1=2
-                                 \]
-                            </p>
-                    <li>x = 1</li>
-                            <p>
-                                \[
-                                    f( 1) =2.2^{1} =2.2=4
-                                \]
-                            </p>
-                    <li>x = 2</li>
-                            <p>
-                                \[
-                                    f( 2) =2.2^{2} =2.4=8
-                                \]
-                            </p>
-                    </ul>
                 </p>
-                <iframe src="https://www.desmos.com/calculator/a303wyjras?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-                <img src="../img/tb-grafico_exponecial.png" alt="tabela para montar o gráfico da função exponencial">
+                <li>​​No gráfico, observe dois pontos quaisquer na reta, como \((0,1)\)e \((1,3)\).</li>
+                <p>Substituindo os valores na fórmula:
+                    \[
+                    a=\frac{3-1}{1-0}
+                    \]
+                    \[
+                    a=2.
+                    \]
+                </p>
+                <p>Logo, \(a=2\) e \(b=1\), sendo assim, a função que o gráfico representa é: \(f(x)= 2x+1\)</p>
+            </ul>
+            <h4>Raíz da Função</h4>
+            <p>É o valor que torna a função zero.</p>
+            <p>Exemplo:
+                \[
+                f(x) =\ 2x\ +\ 1
+                \]
+                \[
+                0 =\ 2x\ +\ 1
+                \]
+                \[
+                x=-\frac{1}{2}
+                \]
+            </p>
+
+            <h2>Função Quadrática</h2>
+            <p>Uma função quadrática \(f:R\rightarrow R\) é uma função da forma \(f(x)=ax^2+bx+c\) onde a, b e c são
+                números reais e \(a≠0\). Seu gráfico é representado por uma parábola, <strong>se o
+                    \(a\) (coeficiente angular) for positivo a concavidade será para cima, caso seja negativo a
+                    concavidade será para baixo.</strong></p>
+            <img src="../img/sentido_da_concavidade.png">
+
+            <h3>Como montar o gráfico da função quadrática:</h3>
+            <ul>
+                <li>Achar as raízes:</li>
+                <p>Igualar a função a zero e resolver a equação de segundo grau. Essas raízes serão a intersecção do
+                    gráfico com o eixo X.</p>
+                <li>Achar o vértice:</li>
+                <p>
+                    \[
+                    x_{v}=\frac{-b}{2a}
+                    \]
+                    \[
+                    y_{v} =\frac{-\Delta }{4a}
+                    \]
+                </p>
+                <li>Determinar o ponto onde a parábola cruza o eixo y</li>
+                <p>Para encontrar o ponto de interseção com o eixo y, basta substituir x=0 na equação.</p>
+                <p>Exemplo:
+                    \( y=x^{2} -4x+3\)
+                </p>
+                <li>1° Encontrar as raízes:</li>
+                <p>
+                    \begin{array}{l}
+                    \Delta =b^{2} -4ac\\
+                    \Delta =( -4)^{2} -4.( 1) .( 3)\\
+                    \Delta =16-12\\
+                    \Delta =4
+                    \end{array}
+                </p><br>
+                <p>
+                    \begin{array}{l}
+                    x=\frac{-b\pm \sqrt{\delta }}{2a}\\
+                    \\
+                    x_{1} =\frac{-( -4) +\sqrt{4}}{2.( 1)} =\frac{4+2}{2} =\frac{6}{2} =3\\
+                    \\
+                    x_{2} =\frac{-( -4) -\sqrt{4}}{2.( 1)} =\frac{4-2}{2} =\frac{2}{2} =1
+                    \end{array}
+                </p>
+                <li>2° Encontrar os vértices:</li>
+                <p>
+                    \begin{array}{l}
+                    x_{v} =\frac{-b}{2a}\\
+                    \\
+                    x_{v} =\frac{-( -4)}{2.( 1)} =\ \frac{4}{2} =\ 2\\
+                    \\
+                    y_{v} =\frac{-\delta }{4a}\\
+                    \\
+                    y_{v} =\frac{-4}{4.( 1)} =\frac{-4}{4} =-1
+                    \end{array}
+                </p>
+            </ul>
+            <iframe src="https://www.desmos.com/calculator/alngtvn35d?embed" width="500" height="500"
+                style="border: 1px solid #ccc" frameborder=0></iframe>
+            <h2>Função Exponencial</h2>
+            <p>A função exponencial de base a é uma função que pega um número real x e calcula \(f(x)=a^x\), onde a é um
+                número positivo diferente de 1 (ou seja, \(a>0\) e \(a≠1\)), e x pode ser qualquer número real. A base a
+                é o número que é elevado à potência x.</p>
+            <img src="../img/propriedades_função_exponencial.png" alt="">
+            <h3>Como montar o gráfico da função exponencial:</h3>
+            <p>Exemplo:
+                \[
+                f(x)=2⋅2^x
+                \]
+            <ul>
+                <li>Identifique os Parâmetros:
+                    <p>\(a=2\) (coeficiente).</p>
+                    <p>\(b=2\) (base da exponencial, como \(b>1\), a função é crescente).</p>
+                </li>
+                <li>Calcule Pontos Chave:
+                    <p>Escolha valores para x (por exemplo, -2, -1, 0, 1, 2).</p>
+                    <p>Calcule \(f(x)\) para cada x.</p>
+                </li>
+                <li>x = -2</li>
+                <p>
+                    \[f( -2) =\ 2.2^{-2} =2.\left(\frac{1}{4}\right) =0,5\]
+                </p>
+                <li>x = -1</li>
+                <p>
+                    \[f( -1) =2.2^{-1} =2.\left(\frac{1}{2}\right) =1\]
+                </p>
+                <li>x = 0</li>
+                <p>
+                    \[
+                    f( 0) =2.2^{0} =2.1=2
+                    \]
+                </p>
+                <li>x = 1</li>
+                <p>
+                    \[
+                    f( 1) =2.2^{1} =2.2=4
+                    \]
+                </p>
+                <li>x = 2</li>
+                <p>
+                    \[
+                    f( 2) =2.2^{2} =2.4=8
+                    \]
+                </p>
+            </ul>
+            </p>
+            <iframe src="https://www.desmos.com/calculator/a303wyjras?embed" width="500" height="500"
+                style="border: 1px solid #ccc" frameborder=0></iframe>
+            <img src="../img/tb-grafico_exponecial.png" alt="tabela para montar o gráfico da função exponencial">
             <h2>Logarítmo de Número Real</h2>
-                <p>Dados dois números reais \(a > 0\), \(a ≠ 1 \) e \(β > 0\), existe um único número \(y\) tal que \(a^y = β\). Esse número \(y\) é chamado de <strong> logaritmo de β na base \(a\)</strong> e é representado por: \(y = \log_a \beta\) significa que \(a^y=\beta\)</p>
-                <p>Exemplos:</p>
-                <ul> 
-                    <li>\(\log_{a} 1=0\), pois \(a^{0}=1\)</li> 
-                    <li>\(\log_{a} a=1\), pois \(a^{1}=a\)</li> 
-                    <li>\(\log_{\frac{1}{a}} a=-1\), pois \( (a^{-1})^y = a, a^{-y} = a, -y = 1, y = -1\)</li> 
-                    <li>\(\log_{100} 0,1=-\frac{1}{2}\), pois \( (10^{2})^{y} =10^{-1}, y=-\frac{1}{2}\)</li> 
-                    <li>\(\log 100=2\), pois \( (10)^{y} = (10^{2}), y=2\)</li> 
-                    <li>\(\ln =1\), logaritmo natural, pois \(e^1=e\)</li> 
-                </ul>
+            <p>Dados dois números reais \(a > 0\), \(a ≠ 1 \) e \(β > 0\), existe um único número \(y\) tal que \(a^y =
+                β\). Esse número \(y\) é chamado de <strong> logaritmo de β na base \(a\)</strong> e é representado por:
+                \(y = \log_a \beta\) significa que \(a^y=\beta\)</p>
+            <p>Exemplos:</p>
+            <ul>
+                <li>\(\log_{a} 1=0\), pois \(a^{0}=1\)</li>
+                <li>\(\log_{a} a=1\), pois \(a^{1}=a\)</li>
+                <li>\(\log_{\frac{1}{a}} a=-1\), pois \( (a^{-1})^y = a, a^{-y} = a, -y = 1, y = -1\)</li>
+                <li>\(\log_{100} 0,1=-\frac{1}{2}\), pois \( (10^{2})^{y} =10^{-1}, y=-\frac{1}{2}\)</li>
+                <li>\(\log 100=2\), pois \( (10)^{y} = (10^{2}), y=2\)</li>
+                <li>\(\ln =1\), logaritmo natural, pois \(e^1=e\)</li>
+            </ul>
             <h2>Função Logarítmica</h2>
-                <p>A função logarítmica é representada da seguinte forma : \(f(x)=  logₐ⁡β\), sendo que base b deve ser positiva e diferente de 1.  O Domínio da função logaritmica compreende somente os reais positivos (sem incluir o zero),  já sua Imagem abrange todos os reais</p>
-                <li>\(b>1\), função é crescente</li>
-                <iframe src="https://www.desmos.com/calculator/kaut25qezv?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-                <li> \( 0 < b < 1 \), função é decrescente</li>
-                <iframe src="https://www.desmos.com/calculator/j9vlna7sux?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-                <button id="backToTop">
-                    <i id="arrow" class="ri-arrow-up-s-line" style="color: #FF2978; font-size: 35px;"></i>
-                </button>
-                <script src="../js/sub.js"></script>
+            <p>A função logarítmica é representada da seguinte forma : \(f(x)= logₐ⁡β\), sendo que base b deve ser
+                positiva e diferente de 1. O Domínio da função logaritmica compreende somente os reais positivos (sem
+                incluir o zero), já sua Imagem abrange todos os reais</p>
+            <li>\(b>1\), função é crescente</li>
+            <iframe src="https://www.desmos.com/calculator/kaut25qezv?embed" width="500" height="500"
+                style="border: 1px solid #ccc" frameborder=0></iframe>
+            <li> \( 0 < b < 1 \), função é decrescente</li>
+                    <iframe src="https://www.desmos.com/calculator/j9vlna7sux?embed" width="500" height="500"
+                        style="border: 1px solid #ccc" frameborder=0></iframe>
+                    <button id="backToTop">
+                        <i id="arrow" class="ri-arrow-up-s-line" style="color: #FF2978; font-size: 35px;"></i>
+                    </button>
+                    <script src="../js/sub.js"></script>
         </div>
     </main>
 
@@ -262,4 +285,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     box-sizing: border-box;
+    outline: none;
 }
 header{
     display: flex;
@@ -183,7 +184,7 @@ footer{
     .content {
         display: flex;
         flex-direction: column;
-        margin: 5vh 5vw;
+        margin: 0vh 0vw;
         overflow: hidden;
     }
     header {
@@ -193,11 +194,13 @@ footer{
         overflow: hidden;
         max-width: 100%;
         padding: 1%;
+        margin-bottom: 3vh;
     }
     header button{
         padding: 2vh 0vw 1vh 0vw;
     }
     header span{
+        padding-left: 3vw;
         font-size: 2rem;
     }
     .headline {
@@ -211,41 +214,70 @@ footer{
         margin: 0;
     }
     .Sum-list {
-        box-shadow: none;
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        transform: none;
-    }
-    .Sum-list.show{
+        height: 100vh;
+        background-color: rgba(24, 7, 74, 0.95);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+        z-index: 999;
         border-radius: 0%;
-        border: none;
-        padding: 0%;
-        margin: 0%;
-        transform: none;
-        position: relative;
+    }
+
+    .Sum-list.show {
+        transform: translateY(0%);
         opacity: 1;
-        pointer-events: auto;
-        top: 0px;
-        right: 0px;
+    }
+
+    .Sum-list li {
+        text-align: center;
+        padding: 15px;
+        font-size: 22px;
+    }
+
+    .Sum-list li:hover{
+        background-color: rgba(24, 7, 74, 0.95);
+    }
+
+    #BtnSum {
+        position: absolute;
+        top: 4vh;
+        right: 1vw;
+        background-color: #18074a;
+        padding: 1vh 2vw;
+        border: solid 3px #FF2978;
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px black;
+        transition: 0.3s ease;
+    }
+
+    #BtnSum:hover {
+        transform: scale(1.1);
+    }
+    .ri-close-line {
+        font-size: 28px;
     }
     .Sum-list a {
         border-bottom: none;
     }
-    .Sum-list li {
-        text-align: center;
-        padding: 0;
-    }
     .content h1, .content h2, .content h3 {
         text-align: center;
-        margin: 2vh auto;
+        margin: 1vh auto;
     }
     iframe, img {
-        width: 100%;
+        width: 80%;
     }
     #backToTop {
         bottom: 1vh;
         right: 1vw;
     }
-
     footer{
         margin-top: 3vh;
     }
