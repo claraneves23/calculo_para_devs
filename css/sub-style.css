@@ -200,3 +200,63 @@ footer{
 .social a{
     text-decoration: none;
 }
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 5vh 5vw;
+        overflow: hidden;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .headline {
+        flex: 100%;
+        text-align: center;
+    }
+    .img-headline {
+        flex: 100%;
+    }
+    ul {
+        margin: 0;
+        padding: 5%;
+    }
+    .Sum-list {
+        width: 100%;
+        position: static;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .Sum-list li {
+        text-align: center;
+        padding: 10px;
+    }
+    .content h1, .content h2, .content h3 {
+        text-align: center;
+        margin: 2vh auto;
+    }
+    iframe, img {
+        width: 100%;
+    }
+    #backToTop {
+        bottom: 2vh;
+        right: 2vw;
+    }
+
+    footer{
+        margin-top: 3vh;
+    }
+
+    .logo-rodape{
+        padding: 4vh 0vw 4vh 0vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
