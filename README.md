@@ -3,8 +3,8 @@
 <p> O site foi idealizado por <a href="https://www.linkedin.com/in/clara-neves-23aa832b7" target="_blank">Maria Clara Pirani Neves</a>, atual monitora de Cálculo I da Fatec Rubens Lara. Desenvolvido com base nos materiais do professor <a href="http://lattes.cnpq.br/9794212338938206" target="_blank">Irã Assis Machado</a> e da docente <a href="http://lattes.cnpq.br/9572346885336182" target="_blank">Luciana Santos Paiva</a>, o projeto tem como objetivo tornar o estudo do cálculo mais acessível e descomplicado.</p>
 
 ## Colaboradores
-- João Vitor Vale da Cruz
-<a href="https://github.com/joaovale23" target="_blank"> github </a>   <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-vale-350b96321/" target="_blank"> linkedin </a>
+- João Vitor Vale da Cruz <br>
+<a href="https://github.com/joaovale23" target="_blank"> github </a> & <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-vale-350b96321/" target="_blank"> linkedin </a>
  
 <h2 align="left">Tecnologias usadas</h2>
 <div align="left">
