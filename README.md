@@ -1,8 +1,6 @@
 # Cálculo para Devs 📚
-## Como surgiu?
-<p> O site foi idealizado pela atual monitora de Cálculo I da Fatec Rubens Lara e feito com base nos materiais do professor
-<a href="http://lattes.cnpq.br/9794212338938206" target="_blank">Irã Assis Machado</a> e da atual docente
-<a href="http://lattes.cnpq.br/9572346885336182" target="_blank">Luciana Santos Paiva</a>, e tem como objetivo tornar o cálculo descomplicado e acessível.</p>
+## Como surgiu?  
+<p> O site foi idealizado por <a href="https://www.linkedin.com/in/clara-neves-23aa832b7" target="_blank">Maria Clara Pirani Neves</a>, atual monitora de Cálculo I da Fatec Rubens Lara. Desenvolvido com base nos materiais do professor <a href="http://lattes.cnpq.br/9794212338938206" target="_blank">Irã Assis Machado</a> e da docente <a href="http://lattes.cnpq.br/9572346885336182" target="_blank">Luciana Santos Paiva</a>, o projeto tem como objetivo tornar o estudo do cálculo mais acessível e descomplicado.</p>
     
 <h2 align="left">Tecnologias usadas</h2>
 <div align="left">
