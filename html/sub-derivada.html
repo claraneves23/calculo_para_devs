@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icon.png" type="image/png">
     <title>Derivada</title>
     <link rel="stylesheet" href="../css/sub-style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -13,7 +14,6 @@
     <script type="text/javascript" async
         id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
-
     <body>
         <header class="logo">
             <a href="../index.html"><span>Cálculo para Devs</span></a>
@@ -29,8 +29,8 @@
                 <h1>Derivada</h1>
             </div>
             <h2>Definição</h2>
-            <p>A derivada de uma função y = f(x) mede como y muda quando x varia. Ela pode ser representada de três formas:</p>
-                <li>Notação de Lagrange: y′ ou f′(x).</li>
+            <p>A derivada de uma função \(y = f(x)\) mede como y muda quando x varia. Ela pode ser representada de três formas:</p>
+                <li>Notação de Lagrange: \(y′\) ou \(f′(x)\).</li>
                 <li>Notação de Leibniz: \(\frac{dy}{dx}\), que significa "a derivada de y em relação a x".</li>
                 <li>Definição Matemática: A derivada é calculada pela fórmula:</li>
                 <p>\[
@@ -39,10 +39,10 @@
                 </p>
                 <p>Onde \(f( x+\Delta x)-f( x)\) representa a variação de y quando o x muda por \(\Delta x\)</p>
                 <p>Quando uma Função é Derivável?</p>
-                    <li>Uma função y = f(x) é derivável em um conjunto se a derivada f′(x) existir para todos os valores de x nesse conjunto.</li>
-                    <li>Dizer que y = f(x) é derivável em x significa que f′(x) existe para todos os x no domínio da função.</li>
+                    <li>Uma função \(y = f(x)\) é derivável em um conjunto se a derivada \(f′(x)\) existir para todos os valores de x nesse conjunto.</li>
+                    <li>Dizer que \(y = f(x)\) é derivável em x significa que \(f′(x)\) existe para todos os x no domínio da função.</li>
                 <h3>Derivadas Elementares -  Função Constante</h3>
-                    <p>A função constante f(x) = k tem derivada zero para todo x real. Isso acontece porque:</p>
+                    <p>A função constante \(f(x) = k\) tem derivada zero para todo x real. Isso acontece porque:</p>
                         <li>A variação \(\Delta y=f( x+\Delta x-f(x)= k - k = 0)\)</li>
                         <li>A derivada é calculada como:</li>
                     <p>
@@ -50,7 +50,7 @@
                         \displaystyle f'( x) =\lim _{\Delta x\rightarrow 0}\frac{\Delta y}{\Delta x}=\lim _{\Delta x\rightarrow 0}\frac{0}{\Delta x} =0
                         \]
                     </p>
-                    <p>Ou seja, A derivada de uma constante k é sempre 0. Na tabela de derivadas, isso é representado por (k)'=0.</p>
+                    <p>Ou seja, A derivada de uma constante k é sempre 0. Na tabela de derivadas, isso é representado por \((k)'=0\).</p>
                     <p>Exemplo:</p>
                     <p>\(f(x)= 3\), logo, \(f(x) =0\)</p>
                 <h3>Derivadas Elementares -  Função Potência</h3>
@@ -111,14 +111,30 @@
                 <li>Derivada do Produto de Funções</li>
                 <p>&emsp;\(f(x) = x^2\) e \(g(x) = x+2\)</p>
                 <p>&emsp;\(\displaystyle ( f( x).g( x)) '\ =\ f'( x).g( x)+f( x).g '( x)\)</p>
-                <p>&emsp;\(((x^2).(x+2))'=2x.(x+2)+x^2.(1x^0+0)= 2x^2+4x+x^2 = 3x^2+4x\)</p>
+                <p>\[ \left( (x^2) \cdot (x+2) \right)' \]</p>
+                <p>Usando a regra do produto:</p>
+                <p>\[ 2x \cdot (x+2) + x^2 \cdot (1) \]</p>
+                <p>Distribuindo:</p>
+                <p>\[ 2x^2 + 4x + x^2 \]</p>
+                <p>Somando os termos semelhantes:</p>
+                <p>\[ 3x^2 + 4x \]</p>
                 <li>Derivada do Inverso de uma Função</li>
                 <p>&emsp;\(\displaystyle \left(\frac{1}{g( x)}\right) '=\ -\ \frac{g'( x)}{( g( x))^{2}}\)</p>
-                <p>&emsp;\(\displaystyle \left(\frac{1}{x^2+1}\right) '=\ - \frac{(x^2+1)'}{(x^2+1)^{2}}= -\ \frac{2x+0}{(x^2+1)^{2}}=\ -\frac{2x}{(x^2+1)^{2}}\)</p>
+                <p>\[ \left( \frac{1}{x^2+1} \right)' \]</p>
+                <p>\[ - \frac{(x^2+1)'}{(x^2+1)^{2}} \]</p>
+                <p>Derivando o numerador:</p>
+                <p>\[ - \frac{2x + 0}{(x^2+1)^{2}} \]</p>
+                <p>Resultado final:</p>
+                <p>\[ - \frac{2x}{(x^2+1)^{2}} \]</p>
                 <li>Derivada do Quociente de Funções.</li>
                 <p>&emsp;\(\displaystyle \left(\frac{f( x)}{g( x)}\right) '=\frac{f'( x) .g( x) -f( x) .g'( x)}{( g( x))^{2}}\)</p>
                 <p>&emsp;\(f(x) = x^3\) e \(g(x) = x + 1\)</p>
-                <p>&emsp;\(\displaystyle \left(\frac{x^3}{x+1}\right) '=\frac{3x^2 .(x+1) -x^3 .(1x^0+0)}{(x+1)^{2}}=\frac{3x^3+3x^2-x^3 }{(x+1)^{2}}=\frac{2x^3+3x^2}{(x+1)^{2}}\)</p>
+                <p>\[ \left( \frac{x^3}{x+1} \right)' \]</p>
+                <p>\[ \frac{3x^2 \cdot (x+1) - x^3 \cdot (1)}{(x+1)^2} \]</p>
+                <p>Distribuindo os termos:</p>
+                <p>\[ \frac{3x^3 + 3x^2 - x^3}{(x+1)^2} \]</p>
+                <p>Somando os termos semelhantes:</p>
+                <p>\[ \frac{2x^3 + 3x^2}{(x+1)^2} \]</p>
                 <li>Regra da Cadeia (Derivada de Função Composta)</li>
                 <p><strong>Função Composta:</strong></p>
                 <p>\[
@@ -151,10 +167,11 @@
             </p>
             <img src="../img/grafico_ponto_derivada.png">
             <p>Quando \( \Delta x \rightarrow 0 \), as retas secantes \( S_{\Delta x}\) se aproximam da reta tangente \(T\), e seus coeficientes angulares \( mS_{\Delta x}\) tendem ao coeficiente angular \(mT\) da reta tangente \(T\). Assim:</p>
-            <p>\[
-                m_{T} =\ \lim _{\Delta x\rightarrow 0} m_{S\Delta x} =\lim _{\Delta x\rightarrow 0}\frac{f( x_{0} +\ \Delta x) \ -\ f( x_{0})}{\Delta x} =\ f'( x_{0})
-                \]
-            </p>
+            <p>\[ m_{T} =\lim _{\Delta x\rightarrow 0} m_{S\Delta x} \]</p>
+            <p>Expandindo a expressão:</p>
+            <p>\[ \lim _{\Delta x\rightarrow 0}\frac{f( x_{0} +\Delta x) - f( x_{0})}{\Delta x} \]</p>
+            <p>O que resulta na definição da derivada:</p>
+            <p>\[ f'( x_{0}) \]</p>
             <p>Portanto, a derivada \(f'( x_{0}\)) é o coeficiente angular da reta tangente ao gráfico de \(y = f(x)\) no ponto \(x_{0}\). A equação da reta tangente que passa por \((x_{0},f(x_{0}))\) com coeficiente angular \(m_{T} = f'(x_{0})\) é:</p>
             <p>\[
                 y-f( x_{0}) =f'( x_{0})( x-x_{0})
@@ -176,17 +193,17 @@
                 \]
             </p>
             <p>Usando a regra do quociente:</p>
-            <p>
-                \[
-                f'( x) =\frac{( 2x)( 2x-1) -x^{2} .2}{( 2x-1)^{2}} =\frac{4x^{2} -2x-2x^{2}}{( 2x-1)^{2}} =\frac{2x^{2} -2x}{( 2x-1)^{2}}
-                \]
-            </p>
+            <p>\[ f'( x) =\frac{( 2x)( 2x-1) -x^{2} \cdot 2}{( 2x-1)^{2}} \]</p>
+            <p>Distribuindo os termos:</p>
+            <p>\[ \frac{4x^{2} -2x-2x^{2}}{( 2x-1)^{2}} \]</p>
+            <p>Somando os termos semelhantes:</p>
+            <p>\[ \frac{2x^{2} -2x}{( 2x-1)^{2}} \]</p>
             <p><strong>3. Calcule \(f'(2)\):</strong></p>
-            <p>
-                \[
-                f'( 2) =\frac{2.( 2)^{2} -2.( 2)}{( 2.2-1)^{2}} =\frac{2.( 4) -4}{( 4-1)^{2}} =\frac{8-4}{( 3)^{2}} =\frac{4}{9}
-                \]
-            </p>
+            <p>\[ f'( 2) =\frac{2 \cdot (2)^2 - 2 \cdot (2)}{(2 \cdot 2 - 1)^2} \]</p>
+            <p>Resolvendo os cálculos:</p>
+            <p>\[ \frac{2 \cdot 4 - 4}{(4 - 1)^2} \]</p>
+            <p>\[ \frac{8 - 4}{3^2} \]</p>
+            <p>\[ \frac{4}{9} \]</p>
             <p><strong>4. Escreva a equação da reta tangente:</strong></p>
             <p>
                 \[
@@ -232,8 +249,18 @@
             </p>
             <p>Para \(x = 2\) metros e \(dx = 0,001\) metros (aumento nas arestas), calcule a diferencial \(dV\)</p>
             <p>
+                \[ 
+                dV = V'(2) \cdot dx = 3 \cdot (2)^2 \cdot 0,001 
+                \]
+            </p>
+            <p>
                 \[
-                dV= V'(2).dx = 3.(2)^2.0,001 = 12.0,001 = 0,012m^3
+                = 12 \cdot 0,001 
+                \]
+            </p>
+            <p>
+                \[
+                = 0,012 \, m^3
                 \]
             </p>
             <p><strong>4. Portanto, a variação aproximada do volume é \(0,012m^3\)</strong></p>
@@ -250,11 +277,16 @@
                 \]
             </p>
             <p>Isso mede a taxa média de vaiação da posição no intervalo do tempo \(\Delta t\)</p>
-            <p><strong>3. Velocidade Instantânea \(v(t)\):</strong></p>
+            <h4>3. Velocidade Instantânea \(v(t)\):</h4>
             <p>A velocidade instantânea no instante \(t\) é a derivada da posição em relação ao tempo</p>
             <p>
+                \[ 
+                v(t) = \frac{ds}{dt} = s'(t)
+                \]
+            </p>
+            <p>
                 \[
-                v( t) =\frac{ds}{dt} =\ s'( t) =\lim _{\Delta t\rightarrow 0}\frac{s( t+\Delta t) -s( t)}{\Delta t}
+                = \lim_{\Delta t \rightarrow 0} \frac{s(t + \Delta t) - s(t)}{\Delta t}
                 \]
             </p>
             <p>Isso mede a taxa de variação da posição em um instante específico.</p>
@@ -275,10 +307,25 @@
             </p>
             <p><strong>3. Calcule a velocidade média:</strong></p>
             <p>
-                \[
-                V_{m} =\ \frac{s( 4) -s( 2)}{4-2} =\frac{0,235-0,4}{2} =\frac{-\ 0,165}{2} =-0,0825\ m/s
+                \[ 
+                V_m = \frac{s(4) - s(2)}{4 - 2}
                 \]
             </p>
+            <p>
+                \[
+                = \frac{0,235 - 0,4}{2}
+                \]
+            </p>
+            <p>
+                \[
+                = \frac{-0,165}{2}
+                \]
+            </p>
+            <p>
+                \[
+                = -0,0825 \, m/s
+                \]
+            </p>            
             <p>O sinal negativo indica que o móvel está se movendo na direção oposta.</p>
             <p>b) Calcule a velocidade no instante \(t = 4\)</p>
             <p><strong>1. Calcule a derivada de \(s(t)\):</strong></p>
@@ -289,16 +336,41 @@
             </p>
             <p>Usando a regra do quociente:</p>
             <p>
-                \[
-                s'( t) =\frac{( 1)\left( t^{2} +1\right) -t( 2t)}{\left( t^{2} +1\right)^{2}} =\frac{t^{2} +1-2t^{2}}{\left( t^{2} +1\right)^{2}} =\frac{-t^{2} +1}{\left( t^{2} +1\right)^{2}}
+                \[ 
+                s'(t) = \frac{(1)(t^2 + 1) - t(2t)}{(t^2 + 1)^2}
                 \]
             </p>
-            <p><strong>2. Calcule a derivada de \(s'(4)\):</strong></p>
             <p>
                 \[
-                s'( 4) =\frac{-( 4)^{2} +1}{\left( 4^{2} +1\right)^{2}} =\frac{1-16}{( 17)^{2}} =\frac{-15}{289} \ \approx \ -0,052\ m/s.
+                = \frac{t^2 + 1 - 2t^2}{(t^2 + 1)^2}
                 \]
             </p>
+            <p>
+                \[
+                = \frac{-t^2 + 1}{(t^2 + 1)^2}
+                \]
+            </p>            
+            <p><strong>2. Calcule a derivada de \(s'(4)\):</strong></p>
+            <p>
+                \[ 
+                s'(4) = \frac{-(4)^2 + 1}{(4^2 + 1)^2}
+                \]
+            </p>
+            <p>
+                \[
+                = \frac{1 - 16}{(17)^2}
+                \]
+            </p>
+            <p>
+                \[
+                = \frac{-15}{289}
+                \]
+            </p>
+            <p>
+                \[
+                \approx -0,052 \, m/s
+                \]
+            </p>            
             <p>O sinal negativo que o móvel está se movendo na direção oposta no instante \(t = 4\).</p>
             <h2>Derivadas Sucessivas</h2>
             <p>As derivadas sucessivas são as derivadas de uma função aplicadas várias vezes. Cada nova derivada é calculada a partir da derivada anterior. Aqui está como funciona:</p>
@@ -315,13 +387,35 @@
             <p>Calcule:</p>
             <p>a)\(f'(x)\)</p>
             <p>
-                \[
-                f'(x) = 3.(4x^3)-2(3x^2)+6(2x)-7(1x^0)+0
-                \]
-                \[
-                f'(x) = 12x^3 -6x^2 +12x-7
+                \[ 
+                f'(x) = 3 \cdot (4x^3)
                 \]
             </p>
+            <p>
+                \[
+                - 2 \cdot (3x^2)
+                \]
+            </p>
+            <p>
+                \[
+                + 6 \cdot (2x)
+                \]
+            </p>
+            <p>
+                \[
+                - 7 \cdot (1x^0)
+                \]
+            </p>
+            <p>
+                \[
+                + 0
+                \]
+            </p>
+            <p>
+                \[
+                f'(x) = 12x^3 - 6x^2 + 12x - 7
+                \]
+            </p>            
             <p>b)\(f''(x)\)</p>
             <p>
                 \[
@@ -357,10 +451,20 @@
             <p>Fórmula Geral:</p>
             <p>O Polinômio de Taylor de ordem \(n\) para \(f(x)\) no ponto \(x_{0}\) é:</p>
             <p>
-                \[
-                f( x) \ \approx f( x_{0}) \ +\ f'( x_{0})( x-x_{0}) +\frac{f''( x_{0})}{2!}( x-x_{0})^{2} +\frac{f'''( x_{0})}{3!}( x-x_{0})^{3} +...+\frac{f^{( n)}( x_{0})}{n!}( x-x_{0})^{n}
+                \[ 
+                f(x) \approx f(x_0) + f'(x_0)(x - x_0) 
                 \]
             </p>
+            <p>
+                \[
+                + \frac{f''(x_0)}{2!}(x - x_0)^2 + \frac{f'''(x_0)}{3!}(x - x_0)^3
+                \]
+            </p>
+            <p>
+                \[
+                + \dots + \frac{f^{(n)}(x_0)}{n!}(x - x_0)^n
+                \]
+            </p>            
             <p>\(f(x_{0})\): Valor da função no ponto \(x_{0}\)</p>
             <p>\((x-x_{0})^k\): Potência que mede a distância entre \(x\) e \(x_{0}\)</p>
             <p>\(k!\): Fatorial de \(k\) (exemplo: \(3! = 3.2.1 = 6)\).</p>
@@ -379,10 +483,15 @@
             <p><strong>3. Monte o Polinômio de Taylor de ordem 3</strong></p>
             <p>Substitua os valores na fórmula:</p>
             <p>
-                \[
-                f( x) \ \approx f( 0) \ +\ f'( 0)( x-0) +\frac{f''( 0)}{2!}( x-0)^{2} +\frac{f'''( 0)}{3!}( x-0)^{3}
+                \[ 
+                f(x) \approx f(0) + f'(0)(x - 0) 
                 \]
             </p>
+            <p>
+                \[
+                + \frac{f''(0)}{2!}(x - 0)^2 + \frac{f'''(0)}{3!}(x - 0)^3
+                \]
+            </p>            
             <p>Simplificando:</p>
             <p>
                 \[
@@ -399,10 +508,25 @@
             <p>Para \(x = 0,5\)</p>
             <p>Aproximação</p>
             <p>
-                \[
-                f( 0,5) \ \approx \ 1\ +\ 0,5\ +\ \frac{( 0,5)^{2}}{2} +\ \frac{( 0,5)^{3}}{6} =\ 1+\ 0,5\ +\ 0,125\ +\ 0,0208\ =\ 1,6458
+                \[ 
+                f(0,5) \approx 1 + 0,5 
                 \]
             </p>
+            <p>
+                \[
+                + \frac{(0,5)^2}{2} + \frac{(0,5)^3}{6}
+                \]
+            </p>
+            <p>
+                \[
+                = 1 + 0,5 + 0,125 + 0,0208
+                \]
+            </p>
+            <p>
+                \[
+                = 1,6458
+                \]
+            </p>            
             <p>Valor real \(e^{0,5} \approx \ 1,6487\)  </p>
             <h2>As Regras de L'Hospital</h2>
             <p>As Regras de L'Hospital são usadas para calcular limites que resultam em indeterminações do tipo \(\frac{0}{0}\) ou \(\frac{\infty }{\infty }\). Essas regras dizem que, se duas funções \(f(x)\) e \(g(x)\) são deriváveis e tendem \(0\) ou \(\infty \) quando \(x\) se aproxima de um ponto \(p\), então o limite do quociente \(\frac{f( x)}{g( x)}\) é igual ao limite do quociente das suas derivadas \(\frac{f'( x)}{g'( x)}\), desde que esse último limite exista. Essa regra pode ser aplicada em várias situações, como quando \(x\) tende a um número finito, a infinito, ou a um lado específico de um ponto.</p>
@@ -496,10 +620,11 @@
             <p>
                 \[f'(1) = 3(1)^2 -6(1) = -3 < 0\]
             </p>
-            <p>A função é decrescente em \(0,2\).</p>
+            <p>A função é decrescente em \((0,2)\).</p>
             <li>Para \(x>2\), escolha \(x = 3\):</li>
             <p>
-                \[f'(3) = 3(3)^2-6(3) = 27-18 =9 >0\]
+                \[f'(3) = 3(3)^2-6(3) = 27-18 =9\]
+                \[9 >0\]
             </p>
             <p>A função é crescente em \((2,+\infty )\).</p>
             <p><strong>4.Usar a segunda derivada para classificar os pontos críticos.</strong></p>
@@ -524,7 +649,7 @@
             <p><strong>Verificar máximos e mínimos globais</strong></p>
             <li>Como a função é definida para todos os números reais e tende a \(+\infty \) quando \(x\ \rightarrow +\infty \) e \(-\infty \) quando \(x\ \rightarrow -\infty \), não há máximos ou mínimos globais.</li>
             <p>Respostas:</p>
-            <p>A função é crescente em \(( -\infty ,0)\) e \(2,+\infty \), e decrescente em \(0,2\).</p>
+            <p>A função é crescente em \(( -\infty ,0)\) e \((2,+\infty )\), e decrescente em \((0,2)\).</p>
             <p>A função tem:</p>
             <li>Um máximo local em \(x = 0\).</li>
             <li>Um mínimo local em \(x = 2\).</li>

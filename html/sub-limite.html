@@ -11,6 +11,7 @@
     <script type="text/javascript" async id="MathJax-script"
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
         </script>
+    <link rel="icon" href="../img/icon.png" type="image/png">
     <title>Continuidade e Limite </title>
 </head>
 
@@ -65,9 +66,21 @@
         </ul>
         <p>Exemplos:</p>
         <img src="../img/tb_ex_funcao_continua.png" alt="">
-        <p>\[\lim _{x\rightarrow 0}\left( 3-7x+5x^{2}\right)=3-7.0+5.0^2=3\]
-        \[\lim _{x\rightarrow -1}\left[( x+4)^{3} .( x+2)^{-1}\right] =( -1+4)^{3} .( -1+2)^{-1} =( 3)^{3} .(1)^{-1} =27.\left(\frac{1}{1}\right) =27.1=27\]
-        \[\lim _{t\rightarrow 2}\frac{t^{2} -5t+6}{t-2} =\frac{( 2)^{2} -5.( 2) +6}{2-2} =\frac{4-10+6}{2-2} =\frac{0}{0}\]</p>
+        <p>\[ \lim _{x\rightarrow 0}\left( 3-7x+5x^{2}\right) \]</p>
+        <p>Substituindo \( x = 0 \):</p>
+        <p>\[ 3 - 7(0) + 5(0)^2 = 3 \]</p>
+        <br>
+        <p>\[ \lim _{x\rightarrow -1}\left[( x+4)^{3} \cdot ( x+2)^{-1}\right] \]</p>
+        <p>Substituindo \( x = -1 \):</p>
+        <p>\[ (-1 + 4)^3 \cdot (-1 + 2)^{-1} \]</p>
+        <p>\[ (3)^3 \cdot (1)^{-1} \]</p>
+        <p>\[ 27 \cdot \frac{1}{1} = 27 \cdot 1 = 27 \]</p>
+        <br>
+        <p>\[ \lim _{t\rightarrow 2}\frac{t^{2} -5t+6}{t-2} \]</p>
+        <p>Substituindo \( t = 2 \):</p>
+        <p>\[ \frac{(2)^2 - 5(2) + 6}{2 - 2} \]</p>
+        <p>\[ \frac{4 - 10 + 6}{2 - 2} \]</p>
+        <p>\[ \frac{0}{0} \]</p>
         <p>Isso está correto?</p>
         <p> Não! ​ \(\frac{0}{0}\) é uma indeterminação e não um valor definido.</p>
         <p>É necessário fazer uma fatoração, neste caso vamos utilizar soma e produto:</p>
@@ -87,12 +100,19 @@
             \end{array}
             \]</p>
         <p>Depois pega o sinal de meio, ficando \((t-2).(t-3)\)</p>
-        <p>
+        <p>\[ \lim _{t\rightarrow 2}\frac{t^{2} -5t+6}{t-2} \]</p>
+        <p>Fatorando o numerador:</p>
+        <p>\[ \lim _{t\rightarrow 2}\frac{( t-2) \cdot ( t-3)}{t-2} \]</p>
+        <p>Cancelando o termo \( t-2 \):</p>
+        <p>\[ \lim _{t\rightarrow 2} ( t - 3 ) \]</p>
+        <p>Substituindo \( t = 2 \):</p>
+        <p>\[ 2 - 3 = -1 \]</p>
+        <!--<p>
             \[
             \lim _{t\rightarrow 2}\frac{t^{2} -5t+6}{t-2} =\lim _{t\rightarrow 2}\frac{( t-2) .( t-3)}{t-2} =\frac{(
             2-2) .( 2-3)}{2-2} =-1
             \]
-        </p>
+        </p>-->
         <h2>Limite com indeterminação</h2>
         <p>O limite de uma função f(x) quando x tende a p representa o valor que f(x) se aproxima conforme x se aproxima
             de p. Se a função for contínua em p, então o limite é simplesmente f(p). No entanto, em alguns casos, ao
@@ -111,7 +131,11 @@
         <p>Suponha que: \(\displaystyle \lim _{x\rightarrow 2} \ f( x) =\ 4\) e \( \lim_{x\rightarrow{}2} g(x)= -3\)</p>
         <p>a) \(\displaystyle \lim _{x\rightarrow 2} \ 7f( x) =\ 7.4=28\)</p>
         <p>b) \(\displaystyle \lim _{x\rightarrow 2} \ -2g( x) =-2( -3) =6\)</p>
-        <p>c) \(\displaystyle \lim _{x\rightarrow 2} \ 5f( x) +\ 4g( x) =\ 5.( 4) \ +\ 4.( -3) =20-12=8\)</p>
+        <p>c) \(\lim _{x\rightarrow 2} \ 5f( x) +\ 4g( x) \)</p>
+        <p>Substituindo os valores de \( f(2) = 4 \) e \( g(2) = -3 \):</p>
+        <p>\[ 5 \cdot 4 + 4 \cdot (-3) \]</p>
+        <p>\[ 20 - 12 = 8 \]</p>
+        <!--<p>c) \(\displaystyle \lim _{x\rightarrow 2} \ 5f( x) +\ 4g( x) =\ 5.( 4) \ +\ 4.( -3) =20-12=8\)</p>-->
         <h3>Limites Laterais</h2>
             <h4>Definição</h4>
             <li>Limite pela direita \(\lim _{x\rightarrow p^{+}} f( x) =L_{1}\):</li>

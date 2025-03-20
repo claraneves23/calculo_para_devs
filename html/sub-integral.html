@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icon.png" type="image/png">
     <title>Integral</title>
     <link rel="stylesheet" href="../css/sub-style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -59,19 +60,54 @@
         </p>
         <p>Exemplos:</p>
         <li>\(\int x^{2} dx\ =\ \frac{x^{3}}{3} \ +\ C\)</li>
-        <li>\(\int \sqrt{xdx} \ =\ \int x^{\frac{1}{2}} dx\ =\ \frac{x^{\frac{1}{2} \ +\ 1}}{\frac{1}{2} \ +\ 1} \ +\ C=\ \frac{x^{\frac{3}{2} \ }}{\frac{3}{2}} \ +\ C\ =\ \frac{2}{3} x^{\frac{3}{2}} \ +\ C\)</li>
+        <li>
+            \(\int \sqrt{x} \, dx = \int x^{\frac{1}{2}} \, dx\)
+        </li>
+        <p>
+            \[
+            = \frac{x^{\frac{1}{2} + 1}}{\frac{1}{2} + 1} + C
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{x^{\frac{3}{2}}}{\frac{3}{2}} + C
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{2}{3} x^{\frac{3}{2}} + C
+            \]
+        </p>        
         <h3>Combinação Linear de Funções Integráveis</h3>
         <p>A integral da soma de suas funções é a soma das integrais individuais, e a integral do produto de uma constante por uma função é o produto da constante pela integral dessa função.</p>
         <p>Exemplo:</p>
         <p>Calcule \(\int(3x^2 + 5\sqrt{x})dx\):</p>
-        <p>\(\int(3x^2dx) + \int 5\sqrt{xdx} = 3.\frac{x^{3}}{3} + 5.\frac{2}{3}x^{\frac{3}{2}}+C = x^3 + \frac{10}{3}x^{\frac{3}{2}}+C\)</p>
+        <p>
+            \(\int(3x^2 \, dx) + \int 5\sqrt{x} \, dx = 3 \cdot \frac{x^3}{3}
+        \)
+        </p>
+        <p>
+            \[
+            + 5 \cdot \frac{2}{3} x^{\frac{3}{2}} + C
+            \]
+        </p>
+        <p>
+            \[
+            = x^3 + \frac{10}{3} x^{\frac{3}{2}} + C
+            \]
+        </p>              
         <h3>Linearidade da Integral Indefinida</h3>
         <p>A propriedade de lineandade da integral indefinida afirma que a integral da soma de funções é a soma das integrais individuais e que constantes multiplicativas podem ser retiradas da integral. Matematicamente, isso é expresso como:</p>
         <p>
             \[
-            \int [ \alpha f( x) \ +\ \beta g( x)] \ =\ \alpha \ \int f( x) dx\ +\ \beta \int g( x) dx
+            \int [\alpha f(x) + \beta g(x)] = \alpha \int f(x) \, dx
             \]
         </p>
+        <p>
+            \[
+            + \beta \int g(x) \, dx
+            \]
+        </p>        
         <p>Essa propriedade decorre da linearidade da derivada, garantindo que a operação inversa (integração) também seja linear</p>
         <p>Exemplo:</p>
         <p>Calcule a integral indefinida da função:</p>
@@ -90,9 +126,19 @@
         <p><strong>2. Integral de \(-2x\).</strong></p>
         <p>
             \[
-            \int -2xdx\ =\ -2.\frac{x^{1+1}}{1+1} \ =\ -2.\frac{x^{2}}{2} \ =\ -x^{2}
+            \int -2x \, dx = -2 \cdot \frac{x^{1+1}}{1+1}
             \]
         </p>
+        <p>
+            \[
+            = -2 \cdot \frac{x^2}{2}
+            \]
+        </p>
+        <p>
+            \[
+            = -x^2
+            \]
+        </p>        
         <p><strong>3. Integral de 7.</strong></p>
         <p>
             \[
@@ -109,7 +155,7 @@
         <p>Quando conhecemos a derivada de uma função e uma condição inicial, podemos determinar a função original por meio da integração Esse processo é utilizado, por exemplo, para encontrar a posição de um móvel a partir de sua velocidade. A relação básica é:</p>
         <p>
             \[
-            \frac{dx}{dy} \ =\ f'( x) \ \rightarrow \ y\ =\ \int f'( x) .dx\ +\ C
+            \frac{dx}{dy} \ =f'( x) \rightarrow  y\ =\ \int f'( x) .dx\ +\ C
             \]
         </p>
         <p>onde C é uma constante determinada pela condição inicial.</p>
@@ -219,16 +265,30 @@
         <p>b)\(\int _{a}^{b} (f( x) + g(x)) dx\ \)</p>
         <p><strong>1. Use a propriedade da linearidade</strong></p>
         <p>
-            \[\int _{a}^{b} (f( x) + g(x)) dx\ = \int _{a}^{b} f( x)dx + \int _{a}^{b} g( x)dx  \]
+            \[
+            \int_{a}^{b} (f(x) + g(x)) \, dx  
+            \]
         </p>
+        <p>
+            \[
+            = \int_{a}^{b} f(x) \, dx + \int_{a}^{b} g(x) \, dx
+            \]
+        </p>        
         <p><strong>2. Substitua os valores dados:</strong></p>
         <p>\[3 + (-4) = -1\]</p>
         <p>Resposta: -1</p>
         <p>c)\(\int _{a}^{b} (-3f( x) + +5g(x)) dx\)</p>
         <p><strong>1. Use a propriedade da linearidade:</strong></p>
         <p>
-            \[\int _{a}^{b} (-3f( x) + +5g(x)) dx = -3\int _{a}^{b} f(x)dx + 5\int _{a}^{b} g(x)dx\]
+            \[
+            \int_{a}^{b} (-3f(x) + 5g(x)) \, dx 
+            \]
         </p>
+        <p>
+            \[
+            = -3 \int_{a}^{b} f(x) \, dx + 5 \int_{a}^{b} g(x) \, dx
+            \]
+        </p>        
         <p><strong>2. Substitua os valores dados:</strong></p>
         <p>\[-3(3) +(-4) = -29\]</p>
         <p>Resposta: -29</p>
@@ -246,8 +306,35 @@
         <p><strong>1. A função \(f(x) = x^2\) é sempre positiva.</strong></p>
         <p><strong>2. Calcule a integral definida:</strong></p>
         <p>
-            \[\int _{1}^{2} x^{2} dx\ =\ \Bigl[\frac{x^{2+1}}{2+1}\Bigr]_{-1}^{2} =\ \Bigl[\frac{x^{3}}{3}\Bigr]_{-1}^{2} \ =\ \frac{2^{3}}{3} \ -\ \frac{( -1)^{3}}{3} \ =\ \frac{8}{3} \ -\left( \ \frac{-1}{3}\right) =\ \frac{8}{3} \ +\ \frac{1}{3} \ =\ \frac{9}{3} \ =\ 3\]
+            \[
+            \int_{1}^{2} x^2 \, dx = \left[\frac{x^{2+1}}{2+1}\right]_{-1}^{2}
+            \]
         </p>
+        <p>
+            \[
+            = \left[\frac{x^3}{3}\right]_{-1}^{2}
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{2^3}{3} - \frac{(-1)^3}{3}
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{8}{3} - \left(\frac{-1}{3}\right)
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{8}{3} + \frac{1}{3}
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{9}{3} = 3
+            \]
+        </p>        
         <p>Resposta: A área é 3 unidades quadradas</p>
         <img src="../img/funcao_positiva.png" alt="Função Positiva">
         <h3>Função Negativa</h3>
@@ -266,14 +353,40 @@
         <p><strong>3. Calcule cada parte:</strong></p>
         <p>
             \[
-            \int _{-2}^{0} x^{3} dx\ = \Bigl[\frac{\ x^{4}}{4}\Bigr]_{-2}^{0} =\ 0\ -\ \frac{( -2)^{4}}{4} \ =-\ \frac{16}{4} \ =\ -4
+            \int_{-2}^{0} x^3 \, dx = \left[\frac{x^4}{4}\right]_{-2}^{0}
             \]
         </p>
         <p>
             \[
-            \int _{0}^{1} x^{3} dx\ = \Bigl[\frac{\ x^{4}}{4}\Bigr]_{0}^{1} =\ =\ \frac{( 1)^{4}}{4} \ - 0 = \frac{1}{4} 
+            = 0 - \frac{(-2)^4}{4}
             \]
         </p>
+        <p>
+            \[
+            = - \frac{16}{4}
+            \]
+        </p>
+        <p>
+            \[
+            = -4
+            \]
+        </p>
+        
+        <p>
+            \[
+            \int_{0}^{1} x^3 \, dx = \left[\frac{x^4}{4}\right]_{0}^{1}
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{(1)^4}{4} - 0
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{1}{4}
+            \]
+        </p>        
         <p><strong>4. Some os valores absolutos para obter a área total:</strong></p>
         <p>
             \[
@@ -299,13 +412,33 @@
         <p><strong>2. Calcule a integral da diferença:</strong></p>
         <p>
             \[
-            A = \int _{0}^{1} (f( x)-g(x)) dx = \int _{0}^{1} (x-x^2)dx\ 
+            A = \int _{0}^{1} (f( x)-g(x)) dx 
             \]
+        </p>
+        <p>
+            \[= \int _{0}^{1} (x-x^2)dx\ \]
         </p>
         <p><strong>3. Resolva a integral:</strong></p>
         <p>
-            \[\int _{0}^{1} (x-x^2)dx\ = \Bigl[\frac{x^{2}}{2} \ -\ \frac{x^{3}}{3}\Bigr]_{0}^{1} \ =\ \left( \ \frac{1}{2} \ -\ \frac{1}{3}\right) \ -\ ( 0-0) \ =\ \ \frac{1}{2} \ -\ \frac{1}{3} =\ \frac{3-2}{6} \ =\ \frac{1}{6}\]
+            \[
+            \int_{0}^{1} (x - x^2) \, dx = \left[\frac{x^2}{2} - \frac{x^3}{3}\right]_{0}^{1}
+            \]
         </p>
+        <p>
+            \[
+            = \left( \frac{1}{2} - \frac{1}{3} \right) - (0 - 0)
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{1}{2} - \frac{1}{3}
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{3-2}{6} = \frac{1}{6}
+            \]
+        </p>        
         <p>Resposta: A área é \(\frac{1}{6}\) unidades quadradas.</p>
         <h3>Deslocamento e Espaço Percorrido</h3>
         <p><strong>1. Deslocamento \(\Delta S\)</strong></p>
@@ -342,15 +475,43 @@
         <p><strong>2. Calcule a integral:</strong></p>
         <p>
             \[
-            \int _{0}^{3} (2t^2 - 4t)dt = \frac{2t^3}{3} - \frac {4t^2}{2} + C = \frac {2t^3}{3} - 2t^2 + C
+            \int_{0}^{3} (2t^2 - 4t) \, dt = \frac{2t^3}{3} - \frac{4t^2}{2} + C
             \]
         </p>
+        <p>
+            \[
+            = \frac{2t^3}{3} - 2t^2 + C
+            \]
+        </p>        
         <p><strong>3. Avalie nos limites \(t = 0 s\) e \(t = 3 s\): </strong></p>
         <p>
             \[
-            \Delta S = \Bigl[\frac{\ {2.(3)^3}}{3} - 2(3)^2\Bigr] -  \Bigl[\frac{\ {2.(0)^3}}{3} - 2(0)^2\Bigr] = \left( \ \frac{54}{3} \ -\ 18\right) - (0) = 18 - 18 = 0
+            \Delta S=\left[\frac{2(3)^3}{3} -2(3)^2\right]
             \]
         </p>
+        <p>
+            \[-\left[\frac{2(0)^3}{3}-2(0)^2\right]\]
+        </p>
+        <p>
+            \[
+            = \left[\frac{2(27)}{3} - 2(9)\right] - \left[\frac{2(0)}{3} - 2(0)\right]
+            \]
+        </p>
+        <p>
+            \[
+            = \left[\frac{54}{3} - 18\right] - (0)
+            \]
+        </p>
+        <p>
+            \[
+            = (18 - 18) - 0
+            \]
+        </p>
+        <p>
+            \[
+            = 0
+            \]
+        </p>          
         <p>O deslocamento é \(0\ metros\). Isso significa que o objeto retornou à posição inicial após \(3\ segundos\) .</p>
         <p>b) O espaço percorrido entre os instantes \(t = 0 s\) e \(t = 3 s\). </p>
         <p><strong>1. Primeiro, determine onde a velocidade \(V( t) \ =\ \left( 2t^{2} \ -\ 4t\right) \ m/s\) é positiva ou negativa </strong></p>
@@ -368,30 +529,73 @@
         <p><strong>2. Calcule o espaço percorrido em cada intervalo:</strong></p>
         <li>De  \(t = 0 \) a \(t = 2 \):</li>
         <p>
-            \[EP_{1} =  \int _{0}^{2} V(t)dt =   \int _{0}^{2} (-V(t)dt) = \int _{0}^{2} (4t-2t^2) \]
+            \[EP_{1} = \int _{0}^{2} V(t)dt \]
+        </p>
+        <p>
+            \[=\int _{0}^{2} (-V(t)dt)\]
+        </p>
+        <p>
+            \[=\int _{0}^{2} (4t-2t^2)\]
         </p>
         <p>Calcule a integral:</p>
-        <p>\[\int (4t - 2t^2)dt = \frac{4t^2}{2} - \frac{2t^3}{3} + C = 2t^2 - \frac{2t^3}{3} + C\]</p>
+        <p>\[\int (4t - 2t^2)dt = \frac{4t^2}{2} - \frac{2t^3}{3} + C\]</p>
+        <p>\[= 2t^2 - \frac{2t^3}{3} + C\]</p>
         <p>Avalie nos limites \(t = 0 \) e \(t = 2 \):</p>
         <p>
-            \[EP_{1} = \Bigl[ 2.( 2)^{2} -\ \frac{2( 2)^{3}}{3}\Bigr] \ -\ 0\ =\ \left( \ 8-\ \frac{16}{3}\right) \ =\ \frac{24}{3} \ -\ \frac{16}{3} \ =\ \frac{8}{3} \ m \]
+            \[
+            EP_1 = \left[ 2(2)^2 - \frac{2(2)^3}{3} \right] - 0
+            \]
         </p>
+        <p>
+            \[
+            = \left[ 8 - \frac{16}{3} \right]
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{24}{3} - \frac{16}{3}
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{8}{3} \, \text{m}
+            \]
+        </p>        
         <li>De  \(t = 2 \) a \(t = 3 \):</li>
         <p>
-            \[EP_{2} =  \int _{2}^{3} \Bigl|V(t)\Bigl| \ dt \ =   \int _{2}^{3} (2t^2- 4)dt \]
+            \[EP_{2} =  \int _{2}^{3} \Bigl|V(t)\Bigl| \ dt \]
+            \[ =   \int _{2}^{3} (2t^2- 4)dt\]
         </p>
         <p>Calcule a integral:</p>
         <p>
             \[
-            \int _{2}^{3} (2t^2- 4)dt = \frac{2t^3}{3} - \frac{4t^2}{2} + C = \frac{2t^3}{3} -2t^2 + C
+            \int _{2}^{3} (2t^2- 4)dt = \frac{2t^3}{3} - \frac{4t^2}{2} + C 
+            \]
+            \[
+            = \frac{2t^3}{3} -2t^2 + C
             \]
         </p>
         <p>Avalie nos limites \(t = 2 \) a \(t = 3 \): </p>
         <p>
             \[
-            \Bigl[\frac{2.( 3)^{3}}{3} \ -\ 2( 3)^{2}\Bigr] \ -\ \Bigl[\frac{2.( 2)^{3}}{3} \ -\ 2( 2)^{2}\Bigr] \ =\ ( 18-18) \ -\ \ \left( \ \frac{16}{3} \ -\ 8\right) \ =\ 0\ -\ \ \left( \ \frac{16}{3} \ -\ \frac{24}{3}\right) = \ \frac{8}{3} \ m 
+            \left[\frac{2(3)^3}{3} - 2(3)^2\right] - \left[\frac{2(2)^3}{3} - 2(2)^2\right]
             \]
         </p>
+        <p>
+            \[
+            = (18 - 18) - \left[\frac{16}{3} - 8\right]
+            \]
+        </p>
+        <p>
+            \[
+            = 0 - \left[\frac{16}{3} - \frac{24}{3}\right]
+            \]
+        </p>
+        <p>
+            \[
+            = \frac{8}{3} \, \text{m}
+            \]
+        </p>        
         <p><strong>3. Some os espaços percorridos:</strong></p>
         <p>
             \[EP_{1} + EP_{2} = \frac{8}{3} + \frac{8}{3} = \frac{16}{3} \ m \]
