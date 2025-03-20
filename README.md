@@ -4,6 +4,7 @@
 
 ## Colaboradores
 - João Vitor Vale da Cruz
+<a href="https://github.com/joaovale23" target="_blank"> github <\a>|<a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-vale-350b96321/" target="_blank"> linkedin <\a>
  
 <h2 align="left">Tecnologias usadas</h2>
 <div align="left">
