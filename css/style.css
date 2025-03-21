@@ -120,6 +120,10 @@ footer{
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
+    button, a {
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
     .content {
         flex-direction: column;
         margin: 5vh 5vw 0vh 5vw;
@@ -151,7 +155,7 @@ footer{
     }
     
     .headline p {
-        text-indent: 0;
+        text-indent: 10%;
         text-align: justify
     }
     
