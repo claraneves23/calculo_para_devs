@@ -15,4 +15,5 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
 </div>
 
-
+## Agradecimentos
+- Agradecimento ao professor Cláudio Nunes pelo apoio ao projeto.
