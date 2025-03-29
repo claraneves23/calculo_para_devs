@@ -35,8 +35,8 @@ header i{
     flex-direction: column;
     position: absolute;
     width: 20vw;
-    top: 45px;
-    right: 10px;
+    top: 6vh;
+    right: 2vw;
     background-color: #18074a;
     list-style: none;
     padding: 0;
@@ -53,7 +53,7 @@ header i{
 }
 .Sum-list.show {
     opacity: 1;
-    transform: translateY(2vh);
+    transform: translateY(4vh);
     pointer-events: auto;
 }
 .Sum-list li:hover{
@@ -181,6 +181,10 @@ footer{
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
+    button, a {
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+    }
     .content {
         display: flex;
         flex-direction: column;
