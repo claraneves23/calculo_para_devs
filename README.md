@@ -16,4 +16,4 @@
 </div>
 
 ## Agradecimentos
-- Agradecimento ao professor Cláudio Nunes pelo apoio ao projeto.
+- Obrigada professor Cláudio Nunes pelo apoio ao projeto.
