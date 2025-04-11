@@ -2,6 +2,9 @@
 *{
     box-sizing: border-box;
 }
+.ddw-sim{
+    
+}
 .content {
     display: flex;
     flex-direction: row;
@@ -96,6 +99,13 @@ li:hover{
     box-shadow: 0 5px 15px black;
     transition: 0.5s;
 }
+
+span{
+    margin: 15vw;
+    color: #090422;
+    font-weight: bold;
+}
+
 footer{
     margin-top:10vh;
     height: max-content;
