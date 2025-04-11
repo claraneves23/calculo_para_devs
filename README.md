@@ -1,18 +1,28 @@
-# Cálculo para Devs 📚
-## Como surgiu?  
-<p> O site foi idealizado por <a href="https://www.linkedin.com/in/clara-neves-23aa832b7" target="_blank">Maria Clara Pirani Neves</a>, atual monitora de Cálculo I da Fatec Rubens Lara. Desenvolvido com base nos materiais do professor <a href="http://lattes.cnpq.br/9794212338938206" target="_blank">Irã Assis Machado</a> e da docente <a href="http://lattes.cnpq.br/9572346885336182" target="_blank">Luciana Santos Paiva</a>, o projeto tem como objetivo tornar o estudo do cálculo mais acessível e descomplicado.</p>
+# 📚 Cálculo para Devs  
 
-## Colaboradores
-- João Vitor Vale da Cruz <br>
-<a href="https://github.com/joaovale23" target="_blank"> github </a> & <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-vale-350b96321/" target="_blank"> linkedin </a>
- 
-<h2 align="left">Tecnologias usadas</h2>
+## 🚀 Como surgiu?  
+O site **Cálculo para Devs** foi idealizado por [Maria Clara Pirani Neves](https://www.linkedin.com/in/clara-neves-23aa832b7), atual monitora de Cálculo I da Fatec Rubens Lara.  
+O projeto foi desenvolvido com base nos materiais do professor [Irã Assis Machado](http://lattes.cnpq.br/9794212338938206) e da docente [Luciana Santos Paiva](http://lattes.cnpq.br/9572346885336182), com o objetivo de tornar o estudo do cálculo mais acessível e descomplicado.  
+
+## 👥 Colaboradores  
+- **João Vitor Vale da Cruz**  
+  [GitHub](https://github.com/joaovale23) | [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-vitor-vale-350b96321/)  
+
+## 🛠 Tecnologias utilizadas  
+As principais tecnologias utilizadas no desenvolvimento do projeto são:  
+
 <div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-</div>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS3" />
+</div>  
+
+## 🎉 Agradecimentos  
+Agradecemos ao professor **Cláudio Nunes** pelo apoio ao projeto. 🙌  
+
+---
+
 
 
