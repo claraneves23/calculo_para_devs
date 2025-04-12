@@ -2,6 +2,34 @@
 *{
     box-sizing: border-box;
 }
+.simulados:hover{
+    background: #18074a;
+    cursor: pointer;
+}
+#SimList{
+    max-height: 0;
+    overflow: hidden;
+    background-color: #18074a;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease, max-height 0.5s ease;
+    overflow: hidden;
+    margin: 0;
+}
+#SimList.here{
+    display: flex;
+    flex-direction: column;
+    max-height: 20vh;
+    opacity: 1;
+    visibility: visible;
+}
+.Sim{
+    margin: 0;
+    width: 100%;
+}
 .content {
     display: flex;
     flex-direction: row;
@@ -96,6 +124,13 @@ li:hover{
     box-shadow: 0 5px 15px black;
     transition: 0.5s;
 }
+
+span{
+    margin: 15vw;
+    color: #090422;
+    font-weight: bold;
+}
+
 footer{
     margin-top:10vh;
     height: max-content;
