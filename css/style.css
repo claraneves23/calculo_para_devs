@@ -2,31 +2,33 @@
 *{
     box-sizing: border-box;
 }
-.simulados:hover{
+#BtnSim:hover, #BtnExc:hover{
     background: #18074a;
     cursor: pointer;
 }
-#SimList{
+#BtnExc, #BtnSim{
+    border-radius: 5px;
+}
+#SimList, #ExcList{
     max-height: 0;
     overflow: hidden;
     background-color: #18074a;
-    border-bottom-left-radius: 4%;
-    border-bottom-right-radius: 4%;
     padding: 0;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease, max-height 0.5s ease;
-    overflow: hidden;
     margin: 0;
 }
-#SimList.here{
+#SimList.here, #ExcList.here{
     display: flex;
     flex-direction: column;
-    max-height: 20vh;
+    max-height: 27vh;
     opacity: 1;
     visibility: visible;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-.Sim{
+.Sim, .Exc{
     margin: 0;
     width: 100%;
 }
