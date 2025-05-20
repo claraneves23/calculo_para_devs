@@ -20,7 +20,12 @@ As principais tecnologias utilizadas no desenvolvimento do projeto são:
 </div>  
 
 ## 🎉 Agradecimentos  
-Agradecemos ao professor **Cláudio Nunes** pelo apoio ao projeto. 🙌  
+Agradecemos ao professor **Cláudio Nunes** pelo apoio ao projeto. 🙌
+
+## 📢 Quer nos ajudar a melhorar?
+Sua opinião é muito importante! Responda ao nosso formulário de feedback e contribua com sugestões de melhorias:
+
+⬇️ Acesse aqui o formulário: <a>https://docs.google.com/forms/d/e/1FAIpQLSe9bGJGTYezBuEcZr63JT88p2RyWWKS83qgb46p5WRlUTfggg/viewform?usp=header</a>
 
 ---
 
